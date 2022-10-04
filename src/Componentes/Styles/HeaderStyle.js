@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {Link} from "react-router-dom"
+import SFMono from '../../Fonte/sf-mono-font/SF-Mono-Bold.ttf'
 
 export const Header = styled.header`
 `
@@ -26,7 +27,11 @@ export const Li = styled.header`
 `
 
 export const LinkS = styled(Link)`
-font-family: 'SF Mono', sans-serif;
+ @font-face {
+        font-family: "SF-Mono-Bold";
+        src: url(${SFMono});
+    }
+    font-family: "SF-Mono-Bold";
   text-decoration: none;
   color: #fff;
   font-weight: 600;
