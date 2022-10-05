@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import SFMono from '../../Fonte/sf-mono-font/SF-Mono-Bold.ttf'
+import Calibre from '../../Fonte/calibre/CalibreRegular.otf'
 
 
 export const GlobalStyle = createGlobalStyle`
@@ -8,11 +9,14 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "SF-Mono-Bold";
         src: url(${SFMono});
     }
+    @font-face {
+        font-family: "CalibreRegular";
+        src: url(${Calibre});
+    }
 *{
   margin: 0;
   padding: 0;
   box-sizing: 0;
-  font-family: 'Calibre', sans-serif;
   background-color: #121212;
  
                                                 

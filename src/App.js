@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div>
       <S.GlobalStyle />
-      <Header link1="Sobre" link2="Projetos" link3="Ods" />
+      <Header link1="Inicio" link2="Sobre" link3="Projetos" link4="Ods"/>
     </div>
   );
 }
