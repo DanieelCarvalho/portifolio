@@ -50,6 +50,9 @@ export const SectionB = styled.section`
   @media screen and (max-width: 500px){
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  border: solid red;
+  height: 550px;
   
 
   }
@@ -95,7 +98,7 @@ export const Foto = styled.img`
     filter: none;
   }
   @media screen and (max-width: 500px){
-    width: 40vw;
+    width: 50vw;
     height: 52vh;
   }
 
@@ -115,7 +118,7 @@ export const BarraFoto= styled.div`
   bottom: -10%;
   transition-duration: 1s;
   @media screen and (max-width: 500px){
-    width: 40vw;
+    width: 50vw;
     height: 52vh;
   }
 
