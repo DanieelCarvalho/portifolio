@@ -31,11 +31,11 @@ export const LinkS = styled(Link)`
         font-family: "SF-Mono-Bold";
         src: url(${SFMono});
     }
-    font-family: "SF-Mono-Bold";
+  font-family: "SF-Mono-Bold";
   text-decoration: none;
   color: #fff;
   font-weight: 600;
-  font-size: 20px;
+  font-size: clamp(0.5rem, 1rem, 2rem);
 
   &:hover {
     color:  #FEE251;

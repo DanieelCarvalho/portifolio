@@ -2,18 +2,21 @@ import styled from "styled-components";
 
 export const H1 = styled.h1`
   font-family:  CalibreRegular;
-  font-size: clamp(2rem, 3rem, 6rem);
+  font-size: clamp(2rem, 3rem, 4rem);
+  width: 250px;
+  @media screen and (max-width: 500px){
+    font-size: clamp(1rem, 2rem, 3rem);
+  }
 `;
 
 export const Section =styled.section`
   width: 100%;
-  height: 800px;
   color: #FEE251;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+ 
 
 ` 
 
@@ -22,13 +25,17 @@ export const Titulo = styled.div`
     height: 200px;
     width: 60%;
     align-items: center;
-   
+ 
    
 `
 export const Linha = styled.div`
     border-top: solid #999b9f;
-    width: 400px;
+    width: 20vw;
     margin-left: 10px;
+    @media screen and (max-width: 500px){
+      width: 40vw;
+      border-top: 0.5px solid #999b9f;
+    }
 
 `
 
@@ -38,8 +45,14 @@ export const SectionB = styled.section`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 100vw;
+  width: 90vw;
   height: 100%;
+  @media screen and (max-width: 500px){
+  flex-direction: column;
+  align-items: center;
+  
+
+  }
  
 
 
@@ -48,18 +61,26 @@ export const SectionB = styled.section`
 export const Div = styled.div`
   width: 35vw;
   height: 100%;
+  @media screen and (max-width: 500px){
+    width: 100%;
+   
+  }
 
 
 `
 export const P = styled.p`
   color:#fff;
-  font-family: CalibreRegular;font-size: clamp(1px, 25px, 26px);
+  font-family: "CalibreRegular";
+  font-size: clamp(1px, 15px, 17px);
   text-align: justify;
   line-height: 26px;
   width: 31vw;
   height: 100%;
-  border: solid red;
-  
+  @media screen and (max-width: 500px){
+    width: 100%;
+  }
+
+
 
 `
 
@@ -72,6 +93,10 @@ export const Foto = styled.img`
   transition: 2s;
   :hover{
     filter: none;
+  }
+  @media screen and (max-width: 500px){
+    width: 40vw;
+    height: 52vh;
   }
 
 
@@ -89,8 +114,10 @@ export const BarraFoto= styled.div`
   left: 10%;
   bottom: -10%;
   transition-duration: 1s;
-
-  
+  @media screen and (max-width: 500px){
+    width: 40vw;
+    height: 52vh;
+  }
 
 `
 export const Figure = styled.figure`
@@ -103,6 +130,7 @@ export const Figure = styled.figure`
      bottom: -5%;
    
   }
+  
  
   }
 
