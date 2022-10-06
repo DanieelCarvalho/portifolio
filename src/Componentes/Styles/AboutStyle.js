@@ -53,7 +53,7 @@ export const Div = styled.div`
 `
 export const P = styled.p`
   color:#fff;
-  font-family: CalibreRegular;font-size: clamp(1rem, 25px, 4rem);
+  font-family: CalibreRegular;font-size: clamp(1rem, 25px, 26px);
   text-align: justify;
   line-height: 26px;
   width: 31vw;
