@@ -67,6 +67,8 @@ export const Div = styled.div`
   flex-direction: column;
   @media screen and (max-width: 500px){
     width: 100%;
+    align-items: center;
+    justify-content: center;
    
   }
 `
@@ -88,6 +90,8 @@ export const P = styled.p`
   height: 100%;
   @media screen and (max-width: 500px){
     width: 100%;
+    display: flex;
+    align-items: center;
   }
 
 
@@ -105,7 +109,7 @@ export const Foto = styled.img`
     filter: none;
   }
   @media screen and (max-width: 500px){
-    width: 50vw;
+    width: 90%;
     height: 52vh;
   }
 
@@ -125,7 +129,7 @@ export const BarraFoto= styled.div`
   bottom: -10%;
   transition-duration: 1s;
   @media screen and (max-width: 500px){
-    width: 50vw;
+    width: 90%;
     height: 52vh;
   }
 
@@ -160,6 +164,9 @@ export const Button = styled.button`
     background-color: #121212;
     color: #999b9f;
     cursor: pointer;
+    @media screen and (max-width: 500px){
+      width: 150px;
+    }
 `
 export const Link = styled.a`
   text-decoration: none;

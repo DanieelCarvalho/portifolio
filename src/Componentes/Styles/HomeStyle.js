@@ -34,7 +34,10 @@ export const H2 = styled.h2`
 export const SectionTwo =styled.section`
     width: 40%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly;@media screen and (max-width: 500px){
+      
+      width: 100%;
+    }
 `
 export const Button =styled.button`
     width: 200px;
@@ -48,6 +51,9 @@ export const Button =styled.button`
     background-color: #121212;
     color: #999b9f;
     cursor: pointer;
+    @media screen and (max-width: 500px){
+      width: 150px;
+    }
  
     
     
