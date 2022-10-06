@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import Props from "./Props.js";
 import * as S from "../../Styles/AboutStyle";
 import Daniel from "../../../img/Perfil12.jpg"
+import { FiInstagram } from 'react-icons/fi';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsDownload } from 'react-icons/bs';
+
+import Curriculo from "../../../curriculo/CurrículoDanielCarvalho.pdf"
 
 export default function About() {
 
@@ -17,21 +22,49 @@ export default function About() {
       </S.Titulo>
 
 
-      <S.SectionB>
+      <S.SectionTwo>
+
         <S.Div>
-        <S.P>
-          Olá! meu nome é Daniel Carvalho, tenho 29 anos de idade e moro em Nova Iguaçu, Baixada Fluminense, no Rio de Janeiro. Sou Formado em história pela UFRRJ. Conheci um pouco melhor sobre o mundo do desenvolvimento web através de um amigo no final de 2021. Fiquei interessado de cara! E desde então venho estudando todos os dias para me tornar um bom desenvolvedor front-end.
-        </S.P>
+          <S.P>
+            Olá! meu nome é Daniel Carvalho, tenho 29 anos de idade e moro em Nova Iguaçu, Baixada Fluminense, no Rio de Janeiro. Sou Formado em história pela UFRRJ. Conheci um pouco melhor sobre o mundo do desenvolvimento web através de um amigo no final de 2021. Fiquei interessado de cara! E desde então venho estudando todos os dias para me tornar um bom desenvolvedor front-end.
+          </S.P>
+          <S.DivTwo>
+        <S.Link target="_blank" href="https://www.instagram.com/danielcgy/" >
+          <S.Button >
+
+            <FiInstagram style={{
+              fontSize: "clamp(1rem, 2rem, 3rem)", color: "#999b9f", textTransform: 'uppercase', fontFamily: "CalibreRegular"
+            }} />
+            Intagram
+          </S.Button>
+        </S.Link>
+
+        <S.Link href={Curriculo}  download={Curriculo}>
+          <S.Button  >
+            <BsDownload style={{
+              fontSize: "clamp(1rem, 2rem, 3rem)", color: "#999b9f", textTransform: 'uppercase', fontFamily: "CalibreRegular"
+            }} />
+
+            <p>Currículo</p>
+          </S.Button>
+        </S.Link>
+
+      </S.DivTwo>
         </S.Div>
-        
+
         <S.Figure>
-        <S.BarraFoto>
+          <S.BarraFoto>
           </S.BarraFoto>
-        <S.Foto src={Daniel} alt="Minha foto de perfil" />
+          <S.Foto src={Daniel} alt="Minha foto de perfil" />
         </S.Figure>
-        
-      
-      </S.SectionB>
+
+      </S.SectionTwo>
+
+
+
+     
+
+
 
     </S.Section>
   );

@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
+
 export const Section = styled.section`
     width: 90%;
     height: 500px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 
-`
+` 
 
 export const H4= styled.h4`
      color:#fff;
@@ -28,4 +30,29 @@ export const H2 = styled.h2`
     font-family: CalibreRegular;
     text-transform: uppercase;
     font-size: clamp(1rem, 2rem, 5rem);
+`
+export const SectionTwo =styled.section`
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+`
+export const Button =styled.button`
+    width: 200px;
+    height: 50px;
+    display: flex;
+    font-family: "SF-Mono-Bold";
+    align-items: center;
+    justify-content: space-evenly;
+    border: #FEE251 solid 1px ;
+    border-radius: 10px;
+    background-color: #121212;
+    color: #999b9f;
+    cursor: pointer;
+ 
+    
+    
+`
+export const Link = styled.a`
+text-decoration: none;
+  
 `

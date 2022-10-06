@@ -16,7 +16,7 @@ export const Section =styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+
 
 ` 
 
@@ -41,18 +41,17 @@ export const Linha = styled.div`
 
 
 
-export const SectionB = styled.section`
+export const SectionTwo = styled.section`
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: 90vw;
   height: 100%;
   @media screen and (max-width: 500px){
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: space-around;
-  border: solid red;
-  height: 550px;
+  justify-content: space-evenly;
+  height: 850px;
   
 
   }
@@ -63,11 +62,19 @@ export const SectionB = styled.section`
 `
 export const Div = styled.div`
   width: 35vw;
-  height: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
   @media screen and (max-width: 500px){
     width: 100%;
    
   }
+`
+export const DivTwo = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 
 
 `
@@ -138,4 +145,23 @@ export const Figure = styled.figure`
   }
 
 
+`
+
+
+export const Button = styled.button`
+   width: 200px;
+    height: 50px;
+    display: flex;
+    font-family: "SF-Mono-Bold";
+    align-items: center;
+    justify-content: space-evenly;
+    border: #FEE251 solid 1px ;
+    border-radius: 10px;
+    background-color: #121212;
+    color: #999b9f;
+    cursor: pointer;
+`
+export const Link = styled.a`
+  text-decoration: none;
+  color:#999b9f;
 `
