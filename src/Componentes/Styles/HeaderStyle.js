@@ -35,7 +35,7 @@ export const LinkS = styled(Link)`
   text-decoration: none;
   color: #fff;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 20px;
 
   &:hover {
     color:  #FEE251;
