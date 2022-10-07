@@ -33,7 +33,9 @@ export default function Home() {
             <FiLinkedin style={{
               fontSize: "clamp(1rem, 2rem, 3rem)", color: "#999b9f", textTransform: 'uppercase', fontFamily: "CalibreRegular"
             }} />
+            <p>
             Linkedin
+            </p>
           </S.Button>
         </S.Link>
 

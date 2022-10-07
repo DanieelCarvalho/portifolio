@@ -159,11 +159,17 @@ export const Button = styled.button`
     font-family: "SF-Mono-Bold";
     align-items: center;
     justify-content: space-evenly;
-    border: #FEE251 solid 1px ;
+    border: #999b9f solid 2px ;
     border-radius: 10px;
     background-color: #121212;
     color: #999b9f;
     cursor: pointer;
+    transition: all .5s;
+    &:hover{
+      border-color:#FEE251 ;
+      transform: scale(1.1)
+  
+    }
     @media screen and (max-width: 500px){
       width: 150px;
     }
@@ -171,4 +177,10 @@ export const Button = styled.button`
 export const Link = styled.a`
   text-decoration: none;
   color:#999b9f;
+  &:hover{
+    p{
+        color: #FEE251;
+      }
+  }
+ 
 `

@@ -1,5 +1,6 @@
 import React from "react";
 import Workprops from "./ProjetosProps";
+import Carousel from 'nuka-carousel';
 import * as S from "../../Styles/ProjetosStyle";
 
 export default function Works() {
@@ -18,3 +19,4 @@ export default function Works() {
     </S.AboutSection>
   );
 }
+ 

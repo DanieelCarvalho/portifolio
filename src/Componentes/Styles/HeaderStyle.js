@@ -36,7 +36,8 @@ export const LinkS = styled(Link)`
   color: #fff;
   font-weight: 600;
   font-size: clamp(0.5rem, 1rem, 2rem);
-    transition: 0.5s;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
   &:hover {
     color:  #FEE251;
   }

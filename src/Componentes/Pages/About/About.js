@@ -28,28 +28,31 @@ export default function About() {
           <S.P>
             Olá! meu nome é Daniel Carvalho, tenho 29 anos de idade e moro em Nova Iguaçu, Baixada Fluminense, no Rio de Janeiro. Sou Formado em história pela UFRRJ. Conheci um pouco melhor sobre o mundo do desenvolvimento web através de um amigo no final de 2021. Fiquei interessado de cara! E desde então venho estudando todos os dias para me tornar um bom desenvolvedor front-end.
           </S.P>
+
           <S.DivTwo>
-        <S.Link target="_blank" href="https://www.instagram.com/danielcgy/" >
-          <S.Button >
+            <S.Link target="_blank" href="https://www.instagram.com/danielcgy/" >
+              <S.Button >
 
-            <FiInstagram style={{
-              fontSize: "clamp(1rem, 2rem, 3rem)", color: "#999b9f", textTransform: 'uppercase', fontFamily: "CalibreRegular"
-            }} />
-            Intagram
-          </S.Button>
-        </S.Link>
+                <FiInstagram style={{
+                  fontSize: "clamp(1rem, 2rem, 3rem)", color: "#999b9f", textTransform: 'uppercase', fontFamily: "CalibreRegular"
+                }} />
+                <p>
+                  Instagram
+                </p>
+              </S.Button>
+            </S.Link>
 
-        <S.Link href={Curriculo}  download={Curriculo}>
-          <S.Button  >
-            <BsDownload style={{
-              fontSize: "clamp(1rem, 2rem, 3rem)", color: "#999b9f", textTransform: 'uppercase', fontFamily: "CalibreRegular"
-            }} />
+            <S.Link href={Curriculo} download={Curriculo}>
+              <S.Button  >
+                <BsDownload style={{
+                  fontSize: "clamp(1rem, 2rem, 3rem)", color: "#999b9f", textTransform: 'uppercase', fontFamily: "CalibreRegular"
+                }} />
 
-            <p>Currículo</p>
-          </S.Button>
-        </S.Link>
+                <p>Currículo</p>
+              </S.Button>
+            </S.Link>
 
-      </S.DivTwo>
+          </S.DivTwo>
         </S.Div>
 
         <S.Figure>
@@ -62,7 +65,7 @@ export default function About() {
 
 
 
-     
+
 
 
 
