@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 
 export const Section = styled.section`
-    width: 90%;
-    height: 500px;
+    width: 100%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color:  #121212;
 
 ` 
 

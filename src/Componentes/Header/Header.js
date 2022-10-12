@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "../Pages/About/About.js";
-import Works from "../Pages/Projetos/Projetos"
+import Works from "../Pages/Projetos/Projetos.js"
 import Onu from "../Pages/Ods/Ods.js";
 import Home from "../Pages/Home/Home"
 import * as S from "../Styles/HeaderStyle";

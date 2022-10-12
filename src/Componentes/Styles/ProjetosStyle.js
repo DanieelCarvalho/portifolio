@@ -1,25 +1,47 @@
 import styled from "styled-components";
 
+
 export const AboutSection = styled.section`
   min-height: calc(100vh - 45px);
- 
+  background-color:  #121212;
+  
 `;
 
+export const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  @media screen and (max-width: 500px){
+    border: solid red;
+  }
+
+
+
+`;
 export const Title = styled.h1`
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-  padding-top: 30px;
+    font-family:  CalibreRegular;
+    color: #FEE251;
+     font-size: clamp(2rem, 3rem, 4rem);
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  @media screen and (max-width: 500px){
+    font-size: clamp(1rem, 2rem, 3rem);
+  }
 `;
 
 export const Img = styled.img`
-  width: 100%;
+  width: 25vw;
   height: 100%;
   transition: 0.3s;
   cursor: pointer;
 `;
 
-export const Ancora = styled.a`
+export const Link = styled.a`
   width: 380px;
   height: 210px;
   display: flex;
@@ -58,21 +80,24 @@ export const Ancora = styled.a`
     opacity: 1;
   }
 `;
+export const Div = styled.div`
+  background-color: #121212;
+ `
 
-export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0;
+export const Figure = styled.figure`
+    max-width: 400px;
+   
+  @media screen and (max-width: 500px){
+    
+    
+    
 
 
-  figure {
-    overflow: hidden;
-    max-width: 380px;
   }
-`;
+`
 
-export const ProjectCard = styled.div``;
+
+export const ProjectCard = styled.div`
+ 
+  
+`

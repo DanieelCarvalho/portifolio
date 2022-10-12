@@ -3,6 +3,7 @@ import {Link} from "react-router-dom"
 import SFMono from '../../Fonte/sf-mono-font/SF-Mono-Bold.ttf'
 
 export const Header = styled.header`
+ background-color:  #121212;
 `
 
 export const Nav = styled.header`

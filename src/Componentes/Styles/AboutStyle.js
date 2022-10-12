@@ -11,11 +11,13 @@ export const H1 = styled.h1`
 
 export const Section =styled.section`
   width: 100%;
+  height: 650px;
   color: #FEE251;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color:  #121212;
 
 
 ` 
