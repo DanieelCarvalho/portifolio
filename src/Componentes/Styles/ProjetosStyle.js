@@ -39,6 +39,7 @@ export const Img = styled.img`
   height: 100%;
   transition: 0.3s;
   cursor: pointer;
+
 `;
 
 export const Link = styled.a`
@@ -98,6 +99,9 @@ export const Figure = styled.figure`
 
 
 export const ProjectCard = styled.div`
- 
+
+ @media screen and (max-width: 500px){
+  border: solid red;
+ }
   
 `

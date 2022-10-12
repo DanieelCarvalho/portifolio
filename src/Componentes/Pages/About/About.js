@@ -10,10 +10,10 @@ import Curriculo from "../../../curriculo/CurrículoDanielCarvalho.pdf"
 
 export default function About() {
 
-
+ 
   return (
     <S.Section>
-
+      <S.GlobalStyle/>
       <S.Titulo>
         <S.H1>
           Sobre mim

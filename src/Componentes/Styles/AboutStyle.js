@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+export const GlobalStyle = createGlobalStyle`
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  background-color:  #121212 ;
+ 
+                                              
+}
+`;
+
 
 export const H1 = styled.h1`
   font-family:  CalibreRegular;
@@ -6,12 +18,12 @@ export const H1 = styled.h1`
   width: 250px;
   @media screen and (max-width: 500px){
     font-size: clamp(1rem, 2rem, 3rem);
+    width: 150px;
   }
 `;
 
 export const Section =styled.section`
   width: 100%;
-  height: 650px;
   color: #FEE251;
   display: flex;
   flex-direction: column;
@@ -27,6 +39,10 @@ export const Titulo = styled.div`
     height: 200px;
     width: 60%;
     align-items: center;
+    @media screen and (max-width: 500px){
+    margin-left: 20px;
+      width: 100%;
+    }
  
    
 `

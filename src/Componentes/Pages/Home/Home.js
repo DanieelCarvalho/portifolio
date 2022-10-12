@@ -8,6 +8,7 @@ export default function Home() {
 
   return (
     <S.Section>
+      <S.GlobalStyle/>
       <div>
         <S.H4>olá, meu nome é</S.H4>
         <TypeAnimation
