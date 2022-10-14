@@ -14,11 +14,8 @@ import Witcher from "../../Assets/thewitcher.jpg";
 import Rc from "../../Assets/Rc.jpg"
 
 const Responsivo = styled(Carousel)`
- display: none; 
- @media screen and (max-width: 500px){
-    display: none;
-    z-index: 2;
- }
+
+ 
  
 `
 
@@ -55,7 +52,8 @@ export default function CarouselResponsivo({
       nextButtonText: ">",
       prevButtonText: "<",
       pagingDotsStyle: {
-        fill: "#FEE251"
+        fill: "#FEE251",
+        display:"none"
       },
       nextButtonStyle: {
         border: "none",
@@ -73,8 +71,8 @@ export default function CarouselResponsivo({
   }
   return (
 
-    <div>
-
+    <S.CaixaR>
+      <S.Title>Meus Trabalhos</S.Title>
       <Responsivo {...settings}>
         <S.ProjectCard>
           <S.Link href={beat} target="_blanck" title="Beat">
@@ -168,7 +166,7 @@ export default function CarouselResponsivo({
         </S.ProjectCard>
       </Responsivo>
 
-    </div>
+    </S.CaixaR>
 
 
 

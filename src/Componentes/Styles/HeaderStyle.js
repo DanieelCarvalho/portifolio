@@ -65,9 +65,8 @@ display: none;
     position: absolute;
     left: 78%;
     margin-top: 10px;
-    z-index: 1;
-    
-   
+    z-index: 2;
+ 
     
   }
   button{
@@ -77,15 +76,8 @@ display: none;
     width: 100px;
     color: white;
     border: none;
-    transition: 1s;
-    
+    background-color: #121212;
 
-
-    
-  
- 
-
-   
   }
   li{
    list-style: none;
@@ -112,6 +104,7 @@ export const Foto1 = styled.img`
 `
 export const Botao = styled.button`
     transform: 1s;
+    border: solid red;
     &:active{
    
    transform: scale(-1.5)

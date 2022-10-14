@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+export const GlobalStyle = createGlobalStyle`
+
+*{
+
+  background-color:  #121212 ;
+                                          
+}
+`;
+
  
 
 export const AboutSection = styled.section`
@@ -33,6 +42,7 @@ export const Title = styled.h1`
      align-items: center;
   @media screen and (max-width: 500px){
     font-size: clamp(1rem, 2rem, 3rem);
+    height: 20vh;
   }
 `;
 
@@ -97,7 +107,7 @@ export const Figure = styled.figure`
 
   
   @media screen and (max-width: 500px){
-
+    width: 100%;
   }
 `
 
@@ -111,8 +121,29 @@ export const ProjectCard = styled.div`
  
  @media screen and (max-width: 500px){
   justify-content: center;
+  align-items: center;
   width: 100%;
-  border: solid red;
+  margin-top: 100px;
  }
   
+`
+export const Caixa= styled.div`
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 500px){
+    display: none;
+  }
+
+` 
+export const CaixaR = styled.div`
+   display: none; 
+ @media screen and (max-width: 500px){
+    display: block;
+    height:  122vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+ }
 `
