@@ -1,29 +1,31 @@
 import styled from "styled-components";
-
+ 
 
 export const AboutSection = styled.section`
   min-height: calc(100vh - 45px);
   background-color:  #121212;
+  
   
 `;
 
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 1200px;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   justify-content: space-evenly;
+  border: solid red;
   @media screen and (max-width: 500px){
-    border: solid red;
+  
   }
-
 
 
 `;
 export const Title = styled.h1`
-    font-family:  CalibreRegular;
-    color: #FEE251;
+     font-family:  CalibreRegular;
+     color: #FEE251;
      font-size: clamp(2rem, 3rem, 4rem);
      width: 100%;
      display: flex;
@@ -35,10 +37,11 @@ export const Title = styled.h1`
 `;
 
 export const Img = styled.img`
-  width: 25vw;
+  width: 100%;
   height: 100%;
   transition: 0.3s;
   cursor: pointer;
+ 
 
 `;
 
@@ -49,7 +52,7 @@ export const Link = styled.a`
   flex-direction: column;
 
   &:hover img {
-    transform: scale(1.2);
+    transform: scale(1.06);
   }
 
   span {
@@ -59,25 +62,28 @@ export const Link = styled.a`
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    color: #fff;
-    background-color: #303841;
+    color: #FFF;
+    font-family:  CalibreRegular;
 
     ::before {
       content: "< ";
       opacity: 0;
       transition: 0.3s;
+      color: #FEE251;
     }
 
     ::after {
       content: " />";
       opacity: 0;
       transition: 0.5s;
+      color: #FEE251;
+   
     }
   }
 
   :hover span::before,
   :hover span::after {
-    color: #ff7f50;
+    color: #FEE251;
     opacity: 1;
   }
 `;
@@ -86,22 +92,24 @@ export const Div = styled.div`
  `
 
 export const Figure = styled.figure`
-    max-width: 400px;
-   
+    width: 30vw;
+  
   @media screen and (max-width: 500px){
-    
-    
-    
-
 
   }
 `
 
 
 export const ProjectCard = styled.div`
-
+  height: 400px;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
  @media screen and (max-width: 500px){
-  border: solid red;
+  justify-content: center;
  }
   
 `

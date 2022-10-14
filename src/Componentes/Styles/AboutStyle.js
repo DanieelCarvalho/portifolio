@@ -2,12 +2,9 @@ import styled, { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: 0;
+
   background-color:  #121212 ;
- 
-                                              
+                                          
 }
 `;
 
@@ -19,6 +16,7 @@ export const H1 = styled.h1`
   @media screen and (max-width: 500px){
     font-size: clamp(1rem, 2rem, 3rem);
     width: 150px;
+   
   }
 `;
 
@@ -30,6 +28,7 @@ export const Section =styled.section`
   justify-content: center;
   align-items: center;
   background-color:  #121212;
+ 
 
 
 ` 
@@ -40,8 +39,7 @@ export const Titulo = styled.div`
     width: 60%;
     align-items: center;
     @media screen and (max-width: 500px){
-    margin-left: 20px;
-      width: 100%;
+      width: 90vw;
     }
  
    

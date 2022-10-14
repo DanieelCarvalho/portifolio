@@ -3,12 +3,13 @@ import Projetos from "./ProjetosProps"
 import Carousel from 'nuka-carousel';
 import * as S from "../../Styles/ProjetosStyle";
 
+
 export default function Works() {
   return (
     
     <S.AboutSection>
     
-     
+    
       <Projetos
       
         title="Meus Projetos"
@@ -22,7 +23,6 @@ export default function Works() {
         rc="https://recipe-vnw.netlify.app/"
         witcher="https://witcher-nine.vercel.app/"      />
   
-        
     </S.AboutSection>
    
   );
