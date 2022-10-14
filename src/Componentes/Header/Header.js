@@ -18,16 +18,24 @@ export default function Header({ link1, link2, link3, link4 }) {
       <nav>
         <S.Ul>
           <S.Li>
-            <S.LinkS to="/">{link1}</S.LinkS>
+            <S.LinkS to="/" onClick={() =>{
+                open()
+            }}>{link1}</S.LinkS>
           </S.Li>
           <S.Li>
-            <S.LinkS to="/about">{link2}</S.LinkS>
+            <S.LinkS to="/about" onClick={() =>{
+                open()
+            }}>{link2}</S.LinkS>
           </S.Li>
           <S.Li>
-            <S.LinkS to="/works">{link3}</S.LinkS>
+            <S.LinkS to="/works" onClick={() =>{
+                open()
+            }}>{link3}</S.LinkS>
           </S.Li>
           <S.Li>
-            <S.LinkS to="/ods">{link4}</S.LinkS>
+            <S.LinkS to="/ods" onClick={() =>{
+                open()
+            }}>{link4}</S.LinkS>
           </S.Li>
         </S.Ul>
       </nav>
@@ -38,11 +46,11 @@ export default function Header({ link1, link2, link3, link4 }) {
     <BrowserRouter>
     
     <S.Modal>
-        <button  onClick={() =>{
+        <S.Botao  onClick={() =>{
                 setOpen(!open)
             }}>
-           {open ===true  ? <S.Foto src={Foto1} alt="oi" /> :  <S.Foto src={Foto2} alt="X"/>}
-        </button>
+           {open ===true  ? <S.Foto1 src={Foto1} alt="oi" /> :  <S.Foto src={Foto2} alt="X"/>}
+        </S.Botao>
         {open && Modal()}
         </S.Modal>
 
@@ -50,7 +58,7 @@ export default function Header({ link1, link2, link3, link4 }) {
         <S.Nav>
           <S.Ul>
             <S.Li>
-              <S.LinkS to="/">{link1}</S.LinkS>
+              <S.LinkS to="/" >{link1}</S.LinkS>
             </S.Li>
             <S.Li>
               <S.LinkS to="/about">{link2}</S.LinkS>
@@ -65,13 +73,10 @@ export default function Header({ link1, link2, link3, link4 }) {
         </S.Nav>
       </S.Header>
       <Routes>
-
-        
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
         <Route path="/ods" element={<Onu />} />
-        <Route path="*" element={<Navigate to="/works" replace />} />
       </Routes>
     </BrowserRouter>
   );

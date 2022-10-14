@@ -19,7 +19,7 @@ export const Container = styled.section`
   border: solid red;
   @media screen and (max-width: 500px){
   
-  }
+  } 
 
 
 `;
@@ -93,6 +93,8 @@ export const Div = styled.div`
 
 export const Figure = styled.figure`
     width: 30vw;
+    
+
   
   @media screen and (max-width: 500px){
 
@@ -106,10 +108,11 @@ export const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-  
+ 
  @media screen and (max-width: 500px){
   justify-content: center;
+  width: 100%;
+  border: solid red;
  }
   
 `

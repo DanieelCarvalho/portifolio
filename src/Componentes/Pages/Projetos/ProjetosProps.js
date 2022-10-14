@@ -17,8 +17,12 @@ import Rc from "../../Assets/Rc.jpg"
 import { display, height } from "@mui/system";
 
 const Parousel = styled(Carousel)`
-
   margin-top: 10vh;
+  @media screen and (max-width: 500px){
+    display: none;
+  }
+  
+  
 
 
 `;
@@ -68,9 +72,8 @@ export default function Projetos({
         border: "none",
         backgroundColor:"none",
         color: " #FEE251",
-        
-
       }
+      
     }
   }
   return (

@@ -77,6 +77,12 @@ display: none;
     width: 100px;
     color: white;
     border: none;
+    transition: 1s;
+    
+
+
+    
+  
  
 
    
@@ -89,8 +95,30 @@ display: none;
 
 `
 export const Foto = styled.img`
-    width: 12vh;
+    width: 10vh;
     background-color: #121212;
+
+   
     
+
+
+`
+export const Foto1 = styled.img`
+ width: 10vh; 
+  background-color: #121212;
+ 
+
+   
+`
+export const Botao = styled.button`
+    transform: 1s;
+    &:active{
+   
+   transform: scale(-1.5)
+ }
+
+ 
+
+
 
 `
