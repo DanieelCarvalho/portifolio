@@ -4,6 +4,7 @@ import SFMono from '../../Fonte/sf-mono-font/SF-Mono-Bold.ttf'
 
 export const Header = styled.header`
  background-color:  #121212;
+ width: 100%;
 
 ` 
 
@@ -66,6 +67,7 @@ display: none;
     left: 78%;
     margin-top: 10px;
     z-index: 2;
+   
   
  
     
@@ -74,7 +76,6 @@ display: none;
     display:flex;
     flex-direction:column;
     align-items: center;
-    width: 100px;
     color: white;
     border: none;
     background-color: #121212;

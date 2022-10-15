@@ -17,7 +17,7 @@ export const H1 = styled.h1`
   @media screen and (max-width: 500px){
     font-size: clamp(1rem, 2rem, 3rem);
     width: 150px;
-    border: solid;
+   
    
   }
 `;
