@@ -53,7 +53,7 @@ export default function CarouselResponsivo({
       prevButtonText: "<",
       pagingDotsStyle: {
         fill: "#FEE251",
-        display:"none"
+        display:""
       },
       nextButtonStyle: {
         border: "none",
@@ -72,7 +72,12 @@ export default function CarouselResponsivo({
   return (
 
     <S.CaixaR>
-      <S.Title>Meus Trabalhos</S.Title>
+      <S.CaixaTitulo>
+        <S.Title>
+        Meus Trabalhos
+        </S.Title>
+        <S.Linha></S.Linha>
+      </S.CaixaTitulo>
       <Responsivo {...settings}>
         <S.ProjectCard>
           <S.Link href={beat} target="_blanck" title="Beat">

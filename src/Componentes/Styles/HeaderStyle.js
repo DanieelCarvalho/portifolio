@@ -4,18 +4,18 @@ import SFMono from '../../Fonte/sf-mono-font/SF-Mono-Bold.ttf'
 
 export const Header = styled.header`
  background-color:  #121212;
- @media (max-width:500px){
-        display: none;
-  }
+
 ` 
 
-export const Nav = styled.header`
+export const Nav = styled.nav`
   width: 100%;
   height: 80px;
   display: flex;
   justify-content: center;
   border-bottom: solid #272727 2px;
-  
+  @media (max-width:500px){
+        display: none;
+  }
 
 `
 
@@ -66,6 +66,7 @@ display: none;
     left: 78%;
     margin-top: 10px;
     z-index: 2;
+  
  
     
   }
@@ -77,23 +78,29 @@ display: none;
     color: white;
     border: none;
     background-color: #121212;
-
   }
   li{
    list-style: none;
     
   }
+  nav{
+  
+  }
 
-
+`
+export const Linha= styled.div`
+  
+  width: 100%;
+  height:10vh;
+  display: none;
+  @media (max-width:500px){
+    display: flex;
+    border-bottom: solid #272727 2px;
+  }
 `
 export const Foto = styled.img`
     width: 10vh;
     background-color: #121212;
-
-   
-    
-
-
 `
 export const Foto1 = styled.img`
  width: 10vh; 

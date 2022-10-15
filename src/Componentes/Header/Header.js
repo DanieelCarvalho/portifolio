@@ -52,9 +52,11 @@ export default function Header({ link1, link2, link3, link4 }) {
            {open ===true  ? <S.Foto1 src={Foto1} alt="oi" /> :  <S.Foto src={Foto2} alt="X"/>}
         </S.Botao>
         {open && Modal()}
+        
         </S.Modal>
 
       <S.Header>
+      <S.Linha></S.Linha>
         <S.Nav>
           <S.Ul>
             <S.Li>

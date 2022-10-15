@@ -20,8 +20,6 @@ export default function About() {
         </S.H1>
         <S.Linha></S.Linha>
       </S.Titulo>
-
-
       <S.SectionTwo>
 
         <S.Div>

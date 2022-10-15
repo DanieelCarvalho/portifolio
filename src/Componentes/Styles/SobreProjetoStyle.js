@@ -13,22 +13,23 @@ export const SobreProjeto = styled.div`
     justify-content: space-evenly;
     p{
         text-align: justify;
+      
     }
     h3{
         color: #999b9f; 
         letter-spacing: 1px;
     }
     @media screen and (max-width: 500px){
-        
-       
     }
-  
-   
 `
 export const Div= styled.div`
     display: flex;
     justify-content: space-between;
     width: 30vw;
+    @media screen and (max-width: 500px){
+        width: 100%;
+       
+    }
  
     
     h3{
@@ -42,8 +43,12 @@ export const Div= styled.div`
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        width: 100%;  
+        width: 100%;
+        @media screen and (max-width: 500px){
+        width: 100%;
+       
     }
+        }
     li{
         list-style: none;
         color: #999b9f;   

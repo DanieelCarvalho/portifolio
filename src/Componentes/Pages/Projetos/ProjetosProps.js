@@ -55,7 +55,7 @@ export default function Projetos({
       prevButtonText: "<",
       pagingDotsStyle: {
         fill: "#FEE251",
-        display: "none"
+        display: ""
       },
       nextButtonStyle: {
         border: "none",
@@ -77,7 +77,7 @@ export default function Projetos({
 
   return (
     <div>
-        <CarouselResponsivo />
+        
       
       <S.Caixa>
 

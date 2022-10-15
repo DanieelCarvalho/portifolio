@@ -32,6 +32,16 @@ export const Container = styled.section`
 
 
 `;
+export const CaixaTitulo= styled.div`
+    display: flex;
+    height: 200px;
+    width: 60%;
+    align-items: center;
+    @media screen and (max-width: 500px){
+      width: 90vw;
+    }
+
+`
 export const Title = styled.h1`
      font-family:  CalibreRegular;
      color: #FEE251;
@@ -42,10 +52,22 @@ export const Title = styled.h1`
      align-items: center;
   @media screen and (max-width: 500px){
     font-size: clamp(1rem, 2rem, 3rem);
-    height: 20vh;
+    height: 19vh;
+    width:70%;
+    justify-content: flex-start;
+    margin-left: 10px;
   }
 `;
+export const Linha = styled.div`
+     border-top: solid #999b9f;
+    width: 20vw;
+    margin-left: 10px;
+    @media screen and (max-width: 500px){
+      width: 40vw;
+      border-top: 0.5px solid #999b9f;
+    }
 
+`
 export const Img = styled.img`
   width: 100%;
   height: 100%;
@@ -65,37 +87,8 @@ export const Link = styled.a`
     transform: scale(1.06);
   }
 
-  span {
-    position: relative;
-    z-index: 1;
-    margin-top: -10px;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    color: #FFF;
-    font-family:  CalibreRegular;
 
-    ::before {
-      content: "< ";
-      opacity: 0;
-      transition: 0.3s;
-      color: #FEE251;
-    }
-
-    ::after {
-      content: " />";
-      opacity: 0;
-      transition: 0.5s;
-      color: #FEE251;
-   
-    }
-  }
-
-  :hover span::before,
-  :hover span::after {
-    color: #FEE251;
-    opacity: 1;
-  }
+  
 `;
 export const Div = styled.div`
   background-color: #121212;
