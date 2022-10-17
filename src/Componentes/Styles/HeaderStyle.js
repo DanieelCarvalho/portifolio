@@ -118,9 +118,8 @@ export const Botao = styled.button`
    
    transform: scale(-1.5)
  }
-
- 
-
-
+`
+export const Logo = styled.div`
+p{
 
 `

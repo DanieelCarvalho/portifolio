@@ -21,7 +21,8 @@ export default function Works() {
         pokedex="https://danieelcarvalho.github.io/Pok-dex/"
         star="https://danieelcarvalho.github.io/ProjetoStarWars/"
         rc="https://recipe-vnw.netlify.app/"
-        witcher="https://witcher-nine.vercel.app/"      />
+        witcher="https://witcher-nine.vercel.app/"
+        ods="https://onu-ods.vercel.app/"      />
 
         <CarouselResponsivo
            title="Meus Projetos"
@@ -33,7 +34,8 @@ export default function Works() {
            pokedex="https://danieelcarvalho.github.io/Pok-dex/"
            star="https://danieelcarvalho.github.io/ProjetoStarWars/"
            rc="https://recipe-vnw.netlify.app/"
-           witcher="https://witcher-nine.vercel.app/"      />
+           witcher="https://witcher-nine.vercel.app/" 
+           ods="https://onu-ods.vercel.app/"     />
         
       
 

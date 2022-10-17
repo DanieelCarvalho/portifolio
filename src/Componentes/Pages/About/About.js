@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Props from "./Props.js";
+
 import styled from "styled-components";
 import * as S from "../../Styles/AboutStyle";
 import Daniel from "../../../img/Perfil12.jpg"

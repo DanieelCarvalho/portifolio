@@ -14,6 +14,7 @@ import Pokedex from "../../Assets/pokedex.jpg";
 import Star from "../../Assets/Projetostarwars.jpg";
 import Witcher from "../../Assets/thewitcher.jpg";
 import Rc from "../../Assets/Rc.jpg"
+import Ods from "../../Assets/Ods.jpg"
 import { display, height } from "@mui/system";
 
 const Parousel = styled(Carousel)`
@@ -36,6 +37,7 @@ export default function Projetos({
   star,
   rc,
   witcher,
+  ods
 }) {
   const settings = {
     dots: true,
@@ -172,6 +174,17 @@ export default function Projetos({
 
             </S.Link>
             <Sobre titulo={"Recipes"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/KermitTheSapo/Recipes-vnw"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
+          </S.ProjectCard>
+          
+          <S.ProjectCard>
+            <S.Link href={ods} target="_blanck" title="Ods">
+              <S.Figure>
+                <S.Img
+                  src={Ods} alt="imagem da página"/>
+              </S.Figure>
+
+            </S.Link>
+            <Sobre titulo={"Ods"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/KermitTheSapo/Recipes-vnw"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
           </S.ProjectCard>
         </Parousel>
 

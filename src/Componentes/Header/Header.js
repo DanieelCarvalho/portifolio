@@ -2,7 +2,6 @@ import  React, {useState} from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "../Pages/About/About.js";
 import Works from "../Pages/Projetos/Projetos.js"
-import Onu from "../Pages/Ods/Ods.js";
 import Home from "../Pages/Home/Home"
 import Foto1 from "../../img/xbranco.png"
 import Foto2 from "../../img/menubranco.png"
@@ -32,15 +31,10 @@ export default function Header({ link1, link2, link3, link4 }) {
                 open()
             }}>{link3}</S.LinkS>
           </S.Li>
-          <S.Li>
-            <S.LinkS to="/ods" onClick={() =>{
-                open()
-            }}>{link4}</S.LinkS>
-          </S.Li>
         </S.Ul>
       </nav>
     
-    )
+    ) 
   }
   return (
     <BrowserRouter>
@@ -57,6 +51,9 @@ export default function Header({ link1, link2, link3, link4 }) {
 
       <S.Header>
       <S.Linha></S.Linha>
+      <S.Logo>
+      
+      </S.Logo>
         <S.Nav>
           <S.Ul>
             <S.Li>
@@ -68,9 +65,7 @@ export default function Header({ link1, link2, link3, link4 }) {
             <S.Li>
               <S.LinkS to="/works">{link3}</S.LinkS>
             </S.Li>
-            <S.Li>
-              <S.LinkS to="/ods">{link4}</S.LinkS>
-            </S.Li>
+          
           </S.Ul>
         </S.Nav>
       </S.Header>
@@ -78,7 +73,7 @@ export default function Header({ link1, link2, link3, link4 }) {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
-        <Route path="/ods" element={<Onu />} />
+       
       </Routes>
     </BrowserRouter>
   );

@@ -16,7 +16,7 @@ export const AboutSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 20vh;
+  height: 8vh;
 
   
   
@@ -27,7 +27,6 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   max-width: 1200px;
-  height: 550px;
   margin: 0 auto;
   justify-content: space-evenly;
   border: solid red;
