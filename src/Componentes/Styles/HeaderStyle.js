@@ -11,6 +11,7 @@ export const Header = styled.header`
  border-bottom: solid #272727 2px;
  @media (max-width:500px){
   height:12vh;
+  align-items: center;
   }
 
 `
@@ -85,6 +86,9 @@ display: none;
     color: white;
     border: none;
     background-color: #121212;
+    width: 40px;
+    height: 40px;
+    
   }
   li{
    list-style: none;
@@ -118,7 +122,7 @@ export const Foto1 = styled.img`
 `
 export const Botao = styled.button`
     transform: 1s;
-   
+    border: solid red;
     
     &:active{
    
