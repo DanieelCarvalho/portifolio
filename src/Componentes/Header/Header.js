@@ -7,7 +7,7 @@ import Foto1 from "../../img/xbranco.png"
 import Foto2 from "../../img/menubranco.png"
 import * as S from "../Styles/HeaderStyle";
 
-export default function Header({ link1, link2, link3, link4 }) {
+export default function Header({ link1, link2, link3 }) {
 
   const [open, setOpen] = useState(false)
 
@@ -50,10 +50,11 @@ export default function Header({ link1, link2, link3, link4 }) {
         </S.Modal>
 
       <S.Header>
-      <S.Linha></S.Linha>
-      <S.Logo>
-      
+      <S.CaixaLogo>
+      <S.Logo >
+      <S.LinkLogo to="/" >D</S.LinkLogo>
       </S.Logo>
+      </S.CaixaLogo>
         <S.Nav>
           <S.Ul>
             <S.Li>

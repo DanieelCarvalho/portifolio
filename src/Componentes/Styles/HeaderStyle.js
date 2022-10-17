@@ -1,19 +1,25 @@
 import styled from 'styled-components'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import SFMono from '../../Fonte/sf-mono-font/SF-Mono-Bold.ttf'
 
 export const Header = styled.header`
  background-color:  #121212;
  width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ border-bottom: solid #272727 2px;
+ @media (max-width:500px){
+  height:12vh;
+  }
 
-` 
+`
 
 export const Nav = styled.nav`
-  width: 100%;
+  width: 50%;
   height: 80px;
   display: flex;
   justify-content: center;
-  border-bottom: solid #272727 2px;
   @media (max-width:500px){
         display: none;
   }
@@ -58,7 +64,7 @@ export const LinkS = styled(Link)`
     color:  #FEE251;
   }
 `
-export const Modal= styled.div`
+export const Modal = styled.div`
 display: none;
 @media (max-width:500px){
     display:flex;
@@ -89,7 +95,7 @@ display: none;
   }
 
 `
-export const Linha= styled.div`
+export const Linha = styled.div`
   
   width: 100%;
   height:10vh;
@@ -119,7 +125,47 @@ export const Botao = styled.button`
    transform: scale(-1.5)
  }
 `
-export const Logo = styled.div`
-p{
+export const CaixaLogo =styled.div`
+  background-color: #999b9f ;
+  clip-path: polygon(48% 100%, 100% 51%, 97% 0, 0 0, 0 51%);
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background:  #999b9f;
+  box-sizing: border-box;
+  margin-left: 50px;
 
+
+`
+export const Logo = styled.div`
+clip-path: polygon(48% 100%, 100% 51%, 97% 0, 0 0, 0 51%);
+position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2.5px; /* equal to border thickness */
+  width: 40px; /* container height - (border thickness * 2) */
+  height: 40px; /* container height - (border thickness * 2) */
+ text-align: center;
+ transition: .1s;
+ color: #FEE251;
+ background-color: #121212;
+ transition: .5s;
+ :hover{
+  background-color: #121212;
+  opacity: 0.7;
+ }
+
+`
+export const LinkLogo =styled(Link)`
+  color: #FEE251;
+  text-decoration: none;
+  text-align: center;
+  font-size: clamp(0.5rem, 1.3rem, 2rem);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5;
+  :hover{
+    transform: scale(1.1);
+  }
 `
