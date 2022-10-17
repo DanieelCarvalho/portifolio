@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Props from "./Props.js";
+import styled from "styled-components";
 import * as S from "../../Styles/AboutStyle";
 import Daniel from "../../../img/Perfil12.jpg"
 import { FiInstagram } from 'react-icons/fi';
@@ -10,10 +11,9 @@ import Curriculo from "../../../curriculo/CurrículoDanielCarvalho.pdf"
 
 export default function About() {
 
- 
   return (
     <S.Section>
-      <S.GlobalStyle/>
+      <S.GlobalStyle />
       <S.Titulo>
         <S.H1>
           Sobre mim
@@ -29,25 +29,18 @@ export default function About() {
 
           <S.DivTwo>
             <S.Link target="_blank" href="https://www.instagram.com/danielcgy/" >
-              <S.Button >
 
-                <FiInstagram style={{
-                  fontSize: "clamp(1rem, 2rem, 3rem)", color: "#999b9f", textTransform: 'uppercase', fontFamily: "CalibreRegular"
-                }} />
-                <p>
-                  Instagram
-                </p>
-              </S.Button>
+              <S.Instagram />
+              <p>
+                Instagram
+              </p>
+
             </S.Link>
 
             <S.Link href={Curriculo} download={Curriculo}>
-              <S.Button  >
-                <BsDownload style={{
-                  fontSize: "clamp(1rem, 2rem, 3rem)", color: "#999b9f", textTransform: 'uppercase', fontFamily: "CalibreRegular"
-                }} />
+              <S.Download />
+              <p>Currículo</p>
 
-                <p>Currículo</p>
-              </S.Button>
             </S.Link>
 
           </S.DivTwo>
@@ -60,13 +53,6 @@ export default function About() {
         </S.Figure>
 
       </S.SectionTwo>
-
-
-
-
-
-
-
     </S.Section>
   );
 }

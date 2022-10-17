@@ -64,7 +64,7 @@ display: none;
     display:flex;
     flex-direction:column;
     position: absolute;
-    left: 78%;
+    left: 81%;
     margin-top: 10px;
     z-index: 2;
    
@@ -100,11 +100,11 @@ export const Linha= styled.div`
   }
 `
 export const Foto = styled.img`
-    width: 10vh;
+    width: 8vh;
     background-color: #121212;
 `
 export const Foto1 = styled.img`
- width: 10vh; 
+ width: 8vh; 
   background-color: #121212;
  
 
@@ -112,7 +112,8 @@ export const Foto1 = styled.img`
 `
 export const Botao = styled.button`
     transform: 1s;
-    border: solid red;
+   
+    
     &:active{
    
    transform: scale(-1.5)

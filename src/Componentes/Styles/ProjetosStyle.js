@@ -13,6 +13,11 @@ export const GlobalStyle = createGlobalStyle`
 export const AboutSection = styled.section`
   min-height: calc(100vh - 45px);
   background-color:  #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 20vh;
+
   
   
 `;
@@ -27,6 +32,7 @@ export const Container = styled.section`
   justify-content: space-evenly;
   border: solid red;
   @media screen and (max-width: 500px){
+    
   
   } 
 
@@ -34,11 +40,13 @@ export const Container = styled.section`
 `;
 export const CaixaTitulo= styled.div`
     display: flex;
-    height: 200px;
+    height: 29vh;
     width: 60%;
     align-items: center;
     @media screen and (max-width: 500px){
       width: 90vw;
+      height: 10vh;
+      
     }
 
 `

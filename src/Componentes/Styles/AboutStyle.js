@@ -1,4 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
+import { FiInstagram } from 'react-icons/fi';
+import { HiOutlineMail } from 'react-icons/hi'
+import { BsDownload } from 'react-icons/bs';
 export const GlobalStyle = createGlobalStyle`
 
 *{
@@ -162,18 +165,31 @@ export const Figure = styled.figure`
      bottom: -5%;
    
   }
-  
- 
   }
-
-
+`;
+export const Instagram=styled(FiInstagram)`
+     font-size: clamp(1rem, 1.5rem, 2rem);
+      color: #999b9f;
+      text-transform: uppercase;
+      font-family: CalibreRegular;
+      transition: 0.1s;
+    
+`
+export const Download= styled(BsDownload)`
+font-size: clamp(1rem, 1.5rem, 2rem);
+      color: #999b9f;
+      text-transform: uppercase;
+      font-family: CalibreRegular;
+      transition: 1s;
 `
 
 
-export const Button = styled.button`
-   width: 200px;
+export const Link = styled.a`
+    text-decoration: none;
+    width: 12vw;
     height: 50px;
     display: flex;
+    font-size: 0.9rem;
     font-family: "SF-Mono-Bold";
     align-items: center;
     justify-content: space-evenly;
@@ -185,20 +201,22 @@ export const Button = styled.button`
     transition: all .5s;
     &:hover{
       border-color:#FEE251 ;
-      transform: scale(1.1)
-  
+      transform: scale(1.1);
+      color:#FEE251;
+      ${Instagram}{
+      
+        transform: rotate(20deg);
+        transform: scale(1.1);
+      }
+      ${Download}{
+        transform: scaleY(85%);
+      }
     }
+  
+  
     @media screen and (max-width: 500px){
       width: 150px;
-    }
+      border: #FEE251 solid 2px;
+      
 `
-export const Link = styled.a`
-  text-decoration: none;
-  color:#999b9f;
-  &:hover{
-    p{
-        color: #FEE251;
-      }
-  }
- 
-`
+

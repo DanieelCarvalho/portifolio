@@ -29,25 +29,16 @@ export default function Home() {
       </div>
       <S.SectionTwo>
         <S.Link target="_blank" href="https://www.linkedin.com/in/danieelcarvalho/" >
-          <S.Button >
-
-            <FiLinkedin style={{
-              fontSize: "clamp(1rem, 2rem, 3rem)", color: "#999b9f", textTransform: 'uppercase', fontFamily: "CalibreRegular"
-            }} />
+  
+            <S.Linkedin />
             <p>
             Linkedin
             </p>
-          </S.Button>
         </S.Link>
 
         <S.Link target="_blank" href="https://github.com/DanieelCarvalho" >
-          <S.Button  >
-            <FiGithub style={{
-              fontSize: "clamp(1rem, 2rem, 3rem)", color: "#999b9f", textTransform: 'uppercase', fontFamily: "CalibreRegular"
-            }} />
-
+            <S.Github  />
             <p>Github</p>
-          </S.Button>
         </S.Link>
       </S.SectionTwo>
     </S.Section>
