@@ -12,6 +12,8 @@ export const Header = styled.header`
  @media (max-width:500px){
   height:12vh;
   align-items: center;
+  margin: 0 auto;
+  border: solid red;
   }
 
 `
@@ -74,10 +76,8 @@ display: none;
     left: 79%;
     margin-top: 10px;
     z-index: 2;
-   
-  
- 
-    
+    justify-content: center;
+    align-items: center;
   }
   button{
     display:flex;
@@ -137,9 +137,10 @@ export const CaixaLogo =styled.div`
   background:  #999b9f;
   box-sizing: border-box;
   margin-left: 50px; 
+  bottom: 3%;
   @media (max-width:500px){
     width: 60px;
-  height: 60px;
+    height: 60px;
   }
 
 
@@ -147,10 +148,10 @@ export const CaixaLogo =styled.div`
 export const Logo = styled.div`
 clip-path: polygon(48% 100%, 100% 51%, 97% 0, 0 0, 0 51%);
 position: absolute;
-  top: 2px; /* equal to border thickness */
-  left: 2.5px; /* equal to border thickness */
-  width: 55px; /* container height - (border thickness * 2) */
-  height: 55px; /* container height - (border thickness * 2) */
+  top: 2px; 
+  left: 2.5px; 
+  width: 55px; 
+  height: 55px; 
  text-align: center;
  transition: .1s;
  color: #FEE251;
