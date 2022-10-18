@@ -91,7 +91,7 @@ export default function Projetos({
                 <S.Img src={Beat} alt="foto do projeto" />
               </S.Figure>
             </S.Link>
-            <Sobre titulo={"Beat"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/DanieelCarvalho/Beat"} linguagem1={"Html"} linguagem2={"CSS"} />
+            <Sobre titulo={"Beat"} paragrafo={"Site produzido com base em um design do Vai na Web, usando HTML E CSS. Neste desafio aprendemos sobre display-flex"} link={"https://github.com/DanieelCarvalho/Beat"} linguagem1={"Html"} linguagem2={"CSS"} />
           </S.ProjectCard>
 
 
@@ -101,7 +101,7 @@ export default function Projetos({
                 <S.Img src={Calc} alt="foto do projeto" />
               </S.Figure>
             </S.Link>
-            <Sobre titulo={"Calculadora"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/DanieelCarvalho/calculadora-react"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
+            <Sobre titulo={"Calculadora"} paragrafo={"Desafio proposto pela Vai na Web de criar uma calculadora usando componente de classe onde tivesse pelo menos um botão para limpar o resultado da tela e limpar os inputs"} link={"https://github.com/DanieelCarvalho/calculadora-react"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
           </S.ProjectCard>
 
 
@@ -112,7 +112,7 @@ export default function Projetos({
               </S.Figure>
 
             </S.Link>
-            <Sobre titulo={"Harry Potter"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/DanieelCarvalho/harry-potter"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
+            <Sobre titulo={"Harry Potter"} paragrafo={"Desafio da Vai na Web de consumir uma API utilizando useEffect "} link={"https://github.com/DanieelCarvalho/harry-potter"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
           </S.ProjectCard>
 
           <S.ProjectCard>
@@ -122,7 +122,7 @@ export default function Projetos({
               </S.Figure>
 
             </S.Link>
-            <Sobre titulo={"Lista de Compras"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/DanieelCarvalho/lista-de-compras"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
+            <Sobre titulo={"Lista de Compras"} paragrafo={"O Desafio proposto era de fazer um ToDo com uma função de adicionar tarefa e de remover tarefa. A partir disso, eu tive a ideia de fazer uma lista de compras"} link={"https://github.com/DanieelCarvalho/lista-de-compras"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
           </S.ProjectCard>
 
           <S.ProjectCard>
@@ -132,7 +132,7 @@ export default function Projetos({
               </S.Figure>
 
             </S.Link>
-            <Sobre titulo={"Movie Top+"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/DanieelCarvalho/MovieTop"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
+            <Sobre titulo={"Movie Top+"} paragrafo={"Desafio de consumir uma API de filmes com estilização livre. Minha ideia foi criar uma página onde você pudesse saber quais os filmes mais populares do momento"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
           </S.ProjectCard>
 
           <S.ProjectCard>
@@ -142,7 +142,7 @@ export default function Projetos({
               </S.Figure>
 
             </S.Link>
-            <Sobre titulo={"Pokedex"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/DanieelCarvalho/Pok-dex"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"JavaScript"} />
+            <Sobre titulo={"Pokedex"} paragrafo={"Primeira vez em que consumi uma APi, com ajuda do canal do Youtube Manual do Dev "} link={"https://github.com/DanieelCarvalho/Pok-dex"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"JavaScript"} />
           </S.ProjectCard>
 
           <S.ProjectCard>
@@ -152,17 +152,17 @@ export default function Projetos({
               </S.Figure>
 
             </S.Link>
-            <Sobre titulo={"Star Wars"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/DanieelCarvalho/ProjetoStarWars"} linguagem1={"Html"} linguagem2={"CSS"} />
+            <Sobre titulo={"Star Wars"} paragrafo={"Desafio final do primeiro módulo da Vai na Web"} link={"https://github.com/DanieelCarvalho/ProjetoStarWars"} linguagem1={"Html"} linguagem2={"CSS"} />
           </S.ProjectCard>
 
           <S.ProjectCard>
-            <S.Link href={witcher} target="_blanck" paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} title="the Witcher">
+            <S.Link href={witcher} target="_blanck" paragrafo={""} title="the Witcher">
               <S.Figure>
                 <S.Img src={Witcher} />
               </S.Figure>
 
             </S.Link>
-            <Sobre titulo={"The Witcher"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/DanieelCarvalho/witcher"} linguagem1={"Html"} linguagem2={"CSS"} />
+            <Sobre titulo={"The Witcher"} paragrafo={"Site produzido com base em um design fornecido pelo Vai na we. Esse foi desafio final do Módulo 1 do curso."} link={"https://github.com/DanieelCarvalho/witcher"} linguagem1={"Html"} linguagem2={"CSS"} />
           </S.ProjectCard>
 
           <S.ProjectCard>
@@ -173,7 +173,7 @@ export default function Projetos({
               </S.Figure>
 
             </S.Link>
-            <Sobre titulo={"Recipes"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/KermitTheSapo/Recipes-vnw"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
+            <Sobre titulo={"Recipes"} paragrafo={"Projeto desenvolvido em parceria com um colega para treinar práticas de programação utilizando o GitHub."} link={"https://github.com/KermitTheSapo/Recipes-vnw"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
           </S.ProjectCard>
           
           <S.ProjectCard>
@@ -184,7 +184,7 @@ export default function Projetos({
               </S.Figure>
 
             </S.Link>
-            <Sobre titulo={"Ods"} paragrafo={"Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Manduma pindureta quium dia nois paga.Leite de capivaris, leite de mula manquis sem cabeça."} link={"https://github.com/KermitTheSapo/Recipes-vnw"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
+            <Sobre titulo={"Ods"} paragrafo={"O objetivo desse projeto é mostrar os Objetivos de Desenvolvimento Sustentável, proposto pela Onu, na minha cidade "} link={"https://github.com/KermitTheSapo/Recipes-vnw"} linguagem1={"Html"} linguagem2={"CSS"} linguagem3={"ReactJS"} />
           </S.ProjectCard>
         </Parousel>
 

@@ -7,8 +7,7 @@ export const GlobalStyle = createGlobalStyle`
 *{
 
   background-color:  #121212 ;
-  
-                                          
+                             
 }
 `;
 
@@ -33,6 +32,9 @@ export const Section =styled.section`
   justify-content: center;
   align-items: center;
   background-color:  #121212;
+  @media screen and (max-width: 548px){
+      height: vh;
+    }
  
 
 
@@ -60,25 +62,19 @@ export const Linha = styled.div`
 
 `
 
-
-
 export const SectionTwo = styled.section`
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 90vw;
-  height: 100%;
   @media screen and (max-width: 500px){
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-evenly;
   height: 850px;
-  
+
 
   }
- 
-
-
  
 `
 export const Div = styled.div`
@@ -100,6 +96,7 @@ export const DivTwo = styled.div`
   width: 100%;
 
 
+
 `
 export const P = styled.p`
   color:#fff;
@@ -108,14 +105,13 @@ export const P = styled.p`
   text-align: justify;
   line-height: 26px;
   width: 31vw;
-  height: 100%;
+  height: 100vh;
   @media screen and (max-width: 500px){
     width: 100%;
     display: flex;
     align-items: center;
+   
   }
-
-
 
 `
 
@@ -126,6 +122,7 @@ export const Foto = styled.img`
   z-index: 1;
   filter: brightness(.4);
   transition: 2s;
+  object-fit: cover;
   :hover{
     filter: none;
   }
@@ -173,7 +170,10 @@ export const Instagram=styled(FiInstagram)`
       text-transform: uppercase;
       font-family: CalibreRegular;
       transition: 0.1s;
-    
+      width: 2vw;
+      @media screen and (max-width: 500px){
+        width: 4vw;
+      }
 `
 export const Download= styled(BsDownload)`
 font-size: clamp(1rem, 1.5rem, 2rem);
@@ -181,6 +181,10 @@ font-size: clamp(1rem, 1.5rem, 2rem);
       text-transform: uppercase;
       font-family: CalibreRegular;
       transition: 1s;
+      width: 2vw;
+      @media screen and (max-width: 500px){
+        width: 4vw;
+      }
 `
 
 
@@ -198,6 +202,13 @@ export const Link = styled.a`
     background-color: #121212;
     color: #999b9f;
     cursor: pointer;
+    p{
+      font-size: .8rem;
+      @media screen and (max-width: 500px){
+        font-size: 1rem;
+      }
+     
+    }
     transition: all .5s;
     &:hover{
       border-color:#FEE251 ;
@@ -215,7 +226,7 @@ export const Link = styled.a`
   
   
     @media screen and (max-width: 500px){
-      width: 150px;
+      width: 30vw;
       color: #FEE251;
     }
 `
