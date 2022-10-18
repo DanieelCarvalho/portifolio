@@ -101,7 +101,7 @@ export const Link = styled.a`
     }
     @media screen and (max-width: 500px){
       width: 150px;
-      border: #FEE251 solid 2px;
+      color: #FEE251;
     }
 `
 

@@ -71,7 +71,7 @@ display: none;
     display:flex;
     flex-direction:column;
     position: absolute;
-    left: 81%;
+    left: 79%;
     margin-top: 10px;
     z-index: 2;
    
@@ -86,8 +86,7 @@ display: none;
     color: white;
     border: none;
     background-color: #121212;
-    width: 40px;
-    height: 40px;
+   
     
   }
   li{
@@ -137,7 +136,11 @@ export const CaixaLogo =styled.div`
   height: 45px;
   background:  #999b9f;
   box-sizing: border-box;
-  margin-left: 50px;
+  margin-left: 50px; 
+  @media (max-width:500px){
+    width: 60px;
+  height: 60px;
+  }
 
 
 `
@@ -146,13 +149,17 @@ clip-path: polygon(48% 100%, 100% 51%, 97% 0, 0 0, 0 51%);
 position: absolute;
   top: 2px; /* equal to border thickness */
   left: 2.5px; /* equal to border thickness */
-  width: 40px; /* container height - (border thickness * 2) */
-  height: 40px; /* container height - (border thickness * 2) */
+  width: 55px; /* container height - (border thickness * 2) */
+  height: 55px; /* container height - (border thickness * 2) */
  text-align: center;
  transition: .1s;
  color: #FEE251;
  background-color: #121212;
  transition: .5s;
+ @media (max-width:500px){
+    
+  }
+
  :hover{
   background-color: #121212;
   opacity: 0.7;
