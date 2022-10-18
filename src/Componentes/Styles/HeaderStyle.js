@@ -137,7 +137,7 @@ export const CaixaLogo =styled.div`
   background:  #999b9f;
   box-sizing: border-box;
   margin-left: 50px; 
-  bottom: 4%;
+  bottom: 9%;
   @media (max-width:500px){
     width: 60px;
     height: 60px;
@@ -150,15 +150,16 @@ clip-path: polygon(48% 100%, 100% 51%, 97% 0, 0 0, 0 51%);
 position: absolute;
   top: 2px; 
   left: 2.5px; 
-  width: 55px; 
-  height: 55px; 
+  width: 40px; 
+  height: 40px; 
  text-align: center;
  transition: .1s;
  color: #FEE251;
  background-color: #121212;
  transition: .5s;
  @media (max-width:500px){
-    
+  width: 55px; 
+  height: 55px;
   }
 
  :hover{
@@ -174,10 +175,15 @@ export const LinkLogo =styled(Link)`
   font-size: clamp(0.5rem, 1.3rem, 2rem);
   text-transform: uppercase;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
+  height: 4vh;
   transition: .5;
   :hover{
     transform: scale(1.1);
   }
+  @media (max-width:500px){
+    height: 5vh;
+  }
+
 `
