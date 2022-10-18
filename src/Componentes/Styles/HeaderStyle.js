@@ -13,7 +13,7 @@ export const Header = styled.header`
   height:12vh;
   align-items: center;
   margin: 0 auto;
-  border: solid red;
+
   }
 
 `
@@ -137,7 +137,7 @@ export const CaixaLogo =styled.div`
   background:  #999b9f;
   box-sizing: border-box;
   margin-left: 50px; 
-  bottom: 3%;
+  bottom: 4%;
   @media (max-width:500px){
     width: 60px;
     height: 60px;
