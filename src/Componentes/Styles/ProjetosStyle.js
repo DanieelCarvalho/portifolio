@@ -7,33 +7,16 @@ export const GlobalStyle = createGlobalStyle`
                                           
 }
 `;
-
- 
-
 export const AboutSection = styled.section`
   min-height: calc(100vh - 45px);
   background-color:  #121212;
   display: flex;
+  max-width: 1366px;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 8vh;
-
-  
-  
+  justify-content: space-evenly; 
 `;
 
 export const Container = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-content: space-evenly;
-  border: solid red;
-  @media screen and (max-width: 500px){
-    
-  
-  } 
 
 
 `;
@@ -57,6 +40,7 @@ export const Title = styled.h1`
      display: flex;
      justify-content: center;
      align-items: center;
+     height: 20vh;
   @media screen and (max-width: 500px){
     font-size: clamp(1rem, 2rem, 3rem);
     height: 19vh;
@@ -104,8 +88,6 @@ export const Div = styled.div`
 export const Figure = styled.figure`
     width: 30vw;
     
-
-  
   @media screen and (max-width: 500px){
     width: 100%;
   }
@@ -118,7 +100,6 @@ export const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
- 
  @media screen and (max-width: 500px){
   justify-content: center;
   align-items: center;
@@ -130,6 +111,7 @@ export const ProjectCard = styled.div`
 export const Caixa= styled.div`
   display: flex;
   flex-direction: column;
+  height: 100%;
   @media screen and (max-width: 500px){
     display: none;
   }
@@ -139,11 +121,9 @@ export const CaixaR = styled.div`
    display: none; 
  @media screen and (max-width: 500px){
     display: block;
-    height:  122vh;
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
-   
-    
+    justify-content: space-evenly;  
  }
 `

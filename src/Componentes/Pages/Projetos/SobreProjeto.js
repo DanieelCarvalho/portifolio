@@ -18,7 +18,6 @@ export default function SobreProjeto({ titulo, paragrafo, link, linguagem1, ling
     return (
 
         <S.SobreProjeto>
-
             <h3>{titulo}</h3>
 
 

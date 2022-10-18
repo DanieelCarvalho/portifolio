@@ -79,8 +79,6 @@ export default function Projetos({
 
   return (
     <div>
-        
-      
       <S.Caixa>
 
         <S.Title>{title}</S.Title>

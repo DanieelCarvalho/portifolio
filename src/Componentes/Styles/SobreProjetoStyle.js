@@ -1,5 +1,12 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+export const GlobalStyle = createGlobalStyle`
 
+*{
+
+  background-color:  #121212 ;
+                                          
+}
+`;
 
 
 export const SobreProjeto = styled.div`
