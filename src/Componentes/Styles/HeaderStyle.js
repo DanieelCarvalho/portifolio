@@ -109,11 +109,11 @@ export const Linha = styled.div`
   }
 `
 export const Foto = styled.img`
-    width: 8vh;
+    width: 7vh;
     background-color: #121212;
 `
 export const Foto1 = styled.img`
- width: 8vh; 
+ width: 7vh; 
   background-color: #121212;
  
 
