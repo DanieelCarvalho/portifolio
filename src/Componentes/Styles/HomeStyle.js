@@ -126,6 +126,7 @@ export const Smoke = styled.img`
   animation-delay: 0.5s;
   height: 15vh;
   width: 7vw;
+  border: none;
   filter: brightness(5);
   @keyframes smoke1 {
   0% {
@@ -166,6 +167,7 @@ filter: blur(5px);
   animation-delay: 1.5s;
   height: 15vh;
   width: 7vw;  
+  border: none;
   @keyframes smoke2 {
   0% {
     filter: blur(0px);
@@ -202,9 +204,11 @@ export const Smoke3 = styled.img`
 filter: blur(5px);
   transform-origin: 50% 50%;
   animation: smoke3 4s linear infinite;
-  animation-delay: 2.5s;
+  animation-delay: ;
   height: 15vh;
   width: 7vw;
+  border: none;
+
     filter: brightness(5);
   @keyframes smoke3 {
   0% {
@@ -244,6 +248,8 @@ export const SmokeWrap = styled.div`
   left: 47%;
   bottom: 79%; 
   z-index: 2;
+  border: none;
+
   
 `
 export const SectionSmoke =styled.section`

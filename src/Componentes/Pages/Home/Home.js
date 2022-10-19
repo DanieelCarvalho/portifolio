@@ -25,8 +25,7 @@ export default function Home() {
             style={{
               fontSize: "clamp(2rem, 3rem, 6rem)", color: "#FEE251", textTransform: 'uppercase', fontFamily: "CalibreRegular"
             }}
-            wrapper="span" // Animation will be rendered as a <span>
-            repeat={Infinity} // Repeat this Animation Sequence infinitely
+    
           />
 
           <S.H2>desenvolvedor front-end</S.H2>
