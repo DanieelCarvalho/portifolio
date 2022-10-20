@@ -90,7 +90,7 @@ display: none;
     display:flex;
     flex-direction:column;
     position: absolute;
-    left: 79%;
+    left: 86%;
     margin-top: 10px;
     z-index: 2;
     justify-content: center;
@@ -111,6 +111,9 @@ display: none;
   }
   ul{
     background-color: ${({ theme }) => theme.teste};
+    width: 20vw;
+    position: absolute;
+    right: 9%;
   }
   li{
    list-style: none;
