@@ -10,9 +10,8 @@ export const Section = styled.section`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    @media screen and (max-width: 500px){
-      height: 81vh;
-     
+    @media screen and (max-height: 500px){
+    height: 115vh;
     }
    
  
@@ -45,9 +44,12 @@ export const SectionTwo = styled.section`
     align-items:center;
     justify-content: space-evenly;
     @media screen and (max-width: 500px){
-      
       width: 100%;
     }
+    @media screen and (max-height: 500px){
+    height: 20vh;
+    }
+   
 
 `
 export const Linkedin = styled(FiLinkedin)`

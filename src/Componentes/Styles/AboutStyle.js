@@ -17,18 +17,20 @@ export const H1 = styled.h1`
 
 export const Section =styled.section`
   width: 100%;
-  height: 85vh;
+  height: 90vh;
   color: #FEE251;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color:  ;
-  @media screen and (max-width: 548px){
+  @media screen and (max-width: 500px){
     height: 120vh;
     }
- 
-
-
+    @media screen and (max-height: 500px){
+    height: 120vh;
+    }
+   
+   
 ` 
 
 export const Titulo = styled.div`
