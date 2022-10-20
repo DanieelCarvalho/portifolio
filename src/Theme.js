@@ -9,7 +9,7 @@ export const lightTheme = {
     imagem:"filter: invert(75%) brightness(20%)",
     gradient: 'linear-gradient(#39598A, #79D7ED)',
     toggleBorder: '#FFF',
-    fumaca: "filter(brightness(0));"
+    fumaca: "brightness(0);"
    
   }
   

@@ -108,8 +108,7 @@ export const Cafe = styled.img`
  z-index: 2;
  background-color: none;
  color: ${({ theme }) => theme.home};
-
-
+    filter:  ${({ theme }) => theme.fumaca};
  
 `
 export const SectionSmoke =styled.section`
