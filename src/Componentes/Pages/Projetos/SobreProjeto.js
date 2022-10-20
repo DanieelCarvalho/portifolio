@@ -6,7 +6,8 @@ import * as S from "../../Styles/SobreProjetoStyle";
 
 const Figurinha = styled(FiGithub)`
     font-size:clamp(1rem, 1.5rem, 3rem) ;
-    color: #999b9f;
+    color: #999b9f ;
+    color:${({ theme }) => theme.projeto  };
     transition: 0.6s;
     :hover{
         color: #FEE251;

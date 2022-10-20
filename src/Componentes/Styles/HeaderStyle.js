@@ -3,17 +3,26 @@ import { Link } from "react-router-dom"
 import SFMono from '../../Fonte/sf-mono-font/SF-Mono-Bold.ttf'
 
 export const Header = styled.header`
- background-color:  #121212;
  width: 100%;
  display: flex;
  align-items: center;
  justify-content: space-between;
- border-bottom: solid #272727 2px;
+ border-bottom: solid #272727 1px;
+ border-color:  ${({ theme }) => theme.text};
+ button{
+  display:none;
+ }
  @media (max-width:500px){
+  button{
+  display:initial;
+    position: absolute;
+    left: 37%;
+ }
   height:12vh;
   align-items: center;
   margin: 0 auto;
-
+  display: flex;
+  justify-content: space-between;
   }
 
 `
@@ -23,8 +32,14 @@ export const Nav = styled.nav`
   height: 80px;
   display: flex;
   justify-content: center;
+  button{
+    display: initial;
+  }
   @media (max-width:500px){
-        display: none;
+    display: none;
+     button{
+    display: none;
+  }
   }
 
 `
@@ -36,6 +51,7 @@ export const Ul = styled.ul`
   max-width: 1200px;
   width: 100%;
   height: 100%;  
+  
   @media (max-width:500px){
       flex-direction:column;
       height: 40vh;
@@ -58,7 +74,8 @@ export const LinkS = styled(Link)`
     }
   font-family: "SF-Mono-Bold";
   text-decoration: none;
-  color: #fff;
+  color: #fff ;
+  color: ${({ theme }) => theme.LinkHeader  };
   font-weight: 600;
   font-size: clamp(0.5rem, 1rem, 2rem);
     transition: 0.2s;
@@ -73,11 +90,13 @@ display: none;
     display:flex;
     flex-direction:column;
     position: absolute;
-    left: 79%;
+    left: 82%;
     margin-top: 10px;
     z-index: 2;
     justify-content: center;
     align-items: center;
+    background-color: ${({ theme }) => theme.teste};
+
   }
   button{
     display:flex;
@@ -86,35 +105,33 @@ display: none;
     color: white;
     border: none;
     background-color: #121212;
+    background-color: ${({ theme }) => theme.teste};
    
     
   }
+  ul{
+    background-color: ${({ theme }) => theme.teste};
+  }
   li{
    list-style: none;
+   
     
   }
   nav{
-  
+
   }
 
 `
-export const Linha = styled.div`
-  
-  width: 100%;
-  height:10vh;
-  display: none;
-  @media (max-width:500px){
-    display: flex;
-    border-bottom: solid #272727 2px;
-  }
-`
+
 export const Foto = styled.img`
     width: 7vh;
     background-color: #121212;
+    background-color: ${({ theme }) => theme.teste};
 `
 export const Foto1 = styled.img`
  width: 7vh; 
   background-color: #121212;
+  background-color: ${({ theme }) => theme.teste};
  
 
    
@@ -129,14 +146,14 @@ export const Botao = styled.button`
  }
 `
 export const CaixaLogo =styled.div`
-  background-color: #999b9f ;
+  background-color: #999b9f; 
+  background-color:   ${({ theme }) => theme.logo};
   clip-path: polygon(48% 100%, 100% 51%, 97% 0, 0 0, 0 51%);
   position: relative;
   width: 45px;
   height: 45px;
-  background:  #999b9f;
   box-sizing: border-box;
-  margin-left: 50px; 
+  left :3% ;
   bottom: 9%;
   @media (max-width:500px){
     width: 60px;
@@ -155,7 +172,8 @@ position: absolute;
  text-align: center;
  transition: .1s;
  color: #FEE251;
- background-color: #121212;
+ background-color: #121212 ;
+ background-color:   ${({ theme }) => theme.teste};
  transition: .5s;
  @media (max-width:500px){
   width: 55px; 

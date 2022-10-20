@@ -2,15 +2,6 @@ import styled, { createGlobalStyle } from "styled-components";
 import { FiInstagram } from 'react-icons/fi';
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsDownload } from 'react-icons/bs';
-export const GlobalStyle = createGlobalStyle`
-
-*{
-
-  background-color:  #121212 ;
-                             
-}
-`;
-
 
 export const H1 = styled.h1`
   font-family:  CalibreRegular;
@@ -26,12 +17,12 @@ export const H1 = styled.h1`
 
 export const Section =styled.section`
   width: 100%;
-  color: #FEE251;
+  color: #FEE251  ;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:  #121212;
+  background-color:  ;
   @media screen and (max-width: 548px){
       height: vh;
     }
@@ -99,7 +90,7 @@ export const DivTwo = styled.div`
 
 `
 export const P = styled.p`
-  color:#fff;
+  color:#fff  ;
   font-family: "CalibreRegular";
   font-size: clamp(1px, 15px, 17px);
   text-align: justify;
@@ -166,7 +157,7 @@ export const Figure = styled.figure`
 `;
 export const Instagram=styled(FiInstagram)`
      font-size: clamp(1rem, 1.5rem, 2rem);
-      color: #999b9f;
+      color: #999b9f   ${({ theme }) => theme.text };
       text-transform: uppercase;
       font-family: CalibreRegular;
       transition: 0.1s;
@@ -177,7 +168,7 @@ export const Instagram=styled(FiInstagram)`
 `
 export const Download= styled(BsDownload)`
 font-size: clamp(1rem, 1.5rem, 2rem);
-      color: #999b9f;
+      color: #999b9f   ${({ theme }) => theme.text };
       text-transform: uppercase;
       font-family: CalibreRegular;
       transition: 1s;
@@ -198,9 +189,10 @@ export const Link = styled.a`
     align-items: center;
     justify-content: space-evenly;
     border: #999b9f solid 2px ;
+    border-color:   ${({ theme }) => theme.text };
     border-radius: 10px;
-    background-color: #121212;
     color: #999b9f;
+    color:  ${({ theme }) => theme.text };
     cursor: pointer;
     p{
       font-size: .8rem;

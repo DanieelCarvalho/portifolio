@@ -6,15 +6,16 @@ import Home from "../Pages/Home/Home"
 import Foto1 from "../../img/xbranco.png"
 import Foto2 from "../../img/menubranco.png"
 import * as S from "../Styles/HeaderStyle";
+import Light from "../LightTheme/LightTheme"
 
-export default function Header({ link1, link2, link3 }) {
+export default function Header({ link1, link2, link3, theme, toggleTheme   }) {
 
   const [open, setOpen] = useState(false)
-
   const Modal = () =>{
     return(
       
       <nav>
+        
         <S.Ul>
           <S.Li>
             <S.LinkS to="/" onClick={() =>{
@@ -35,7 +36,7 @@ export default function Header({ link1, link2, link3 }) {
       </nav>
     
     ) 
-  }
+  } 
   return (
     <BrowserRouter>
     
@@ -48,13 +49,16 @@ export default function Header({ link1, link2, link3 }) {
         {open && Modal()}
         
         </S.Modal>
-
+           
       <S.Header>
       <S.CaixaLogo>
+        
       <S.Logo >
+        
       <S.LinkLogo to="/" >D</S.LinkLogo>
       </S.Logo>
       </S.CaixaLogo>
+      <Light theme={theme} toggleTheme={toggleTheme}/>
         <S.Nav>
           <S.Ul>
             <S.Li>
@@ -66,7 +70,9 @@ export default function Header({ link1, link2, link3 }) {
             <S.Li>
               <S.LinkS to="/works">{link3}</S.LinkS>
             </S.Li>
-          
+            <S.Li>
+            <Light theme={theme} toggleTheme={toggleTheme}/>
+            </S.Li>
           </S.Ul>
         </S.Nav>
       </S.Header>

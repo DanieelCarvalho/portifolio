@@ -1,6 +1,7 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import SFMono from '../../Fonte/sf-mono-font/SF-Mono-Bold.ttf'
 import Calibre from '../../Fonte/calibre/CalibreRegular.otf'
+
 
 
 export const GlobalStyle = createGlobalStyle`
@@ -16,8 +17,28 @@ export const GlobalStyle = createGlobalStyle`
 *{
   margin: 0;
   padding: 0;
-  box-sizing: 0;
-  background-color: ;
-                                              
+  box-sizing: border-box;
+  
+                                   
 }
-`;
+body{
+  background-color:  #121212;
+  background: ${({ theme }) => theme.teste};
+  color: ${({ theme }) => theme.text};
+  transition: all 0.25s linear;   
+}
+p{
+  
+}
+
+
+`
+export const Button = styled.button`
+border:solid red
+` 
+export const Container = styled.section`
+  
+`
+
+
+ 

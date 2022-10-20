@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "../../Styles/HomeStyle";
 import Smoke from "../../../img/smoke.png"
-import Cafe from "../../..//img/cafe.png"
+import Cafe from "../../..//img/cafe3.png"
 
 export default function Fumaca() {
 

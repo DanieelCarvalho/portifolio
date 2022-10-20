@@ -1,15 +1,8 @@
 import styled, { createGlobalStyle } from "styled-components";
-export const GlobalStyle = createGlobalStyle`
 
-*{
-
-  background-color:  #121212 ;
-                                          
-}
-`;
 export const AboutSection = styled.section`
   min-height: calc(100vh - 45px);
-  background-color:  #121212;
+  
   display: flex;
   max-width: 1366px;
   flex-direction: column;
@@ -82,7 +75,6 @@ export const Link = styled.a`
   
 `;
 export const Div = styled.div`
-  background-color: #121212;
  `
 
 export const Figure = styled.figure`

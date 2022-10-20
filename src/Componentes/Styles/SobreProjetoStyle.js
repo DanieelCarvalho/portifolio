@@ -1,16 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components";
-export const GlobalStyle = createGlobalStyle`
 
-*{
-
-  background-color:  #121212 ;
-                                          
-}
-`;
 
 
 export const SobreProjeto = styled.div`
-     color:#fff;
+     color:#fff ${({ theme }) => theme.projeto  };
     font-family: CalibreRegular;
     max-width: 375px;
     height: 100%;
@@ -18,12 +11,13 @@ export const SobreProjeto = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    
     p{
         text-align: justify;
       
     }
     h3{
-        color: #999b9f; 
+        color: #999b9f ${({ theme }) => theme.projeto  }; 
         letter-spacing: 1px;
     }
     @media screen and (max-width: 500px){

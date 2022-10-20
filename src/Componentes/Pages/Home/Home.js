@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <S.Section>
-      <S.GlobalStyle />
+
       <S.Div>
         <div>
       
