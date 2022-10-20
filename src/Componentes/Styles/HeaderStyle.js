@@ -208,7 +208,8 @@ export const LinkLogo =styled(Link)`
     height: 5vh;
   }
   @media screen and (max-height: 500px){
-    height: 7vh;
+    height: 9vh;
+    align-items: flex-end;
     }
    
 
