@@ -92,7 +92,7 @@ display: none;
     position: absolute;
     left: 86%;
     margin-top: 10px;
-    z-index: 2;
+    z-index: 1;
     justify-content: center;
     align-items: center;
     background-color: ${({ theme }) => theme.teste};
@@ -112,12 +112,13 @@ display: none;
   ul{
     background-color: ${({ theme }) => theme.teste};
     width: 20vw;
+    height: 29vh;
     position: absolute;
     right: 9%;
+  
   }
   li{
    list-style: none;
-   
     
   }
   nav{
