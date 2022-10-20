@@ -112,7 +112,7 @@ export const Foto = styled.img`
   width: 22vw;
   height: 48vh;
   border-radius: 10px;
-  z-index: 1;
+  z-index: 0;
   filter: brightness(.4);
   transition: 2s;
   object-fit: cover;

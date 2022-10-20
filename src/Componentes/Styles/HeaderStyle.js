@@ -23,6 +23,7 @@ export const Header = styled.header`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  
   }
 
 `
@@ -96,6 +97,7 @@ display: none;
     justify-content: center;
     align-items: center;
     background-color: ${({ theme }) => theme.teste};
+    
 
   }
   button{
@@ -115,11 +117,13 @@ display: none;
     height: 29vh;
     position: absolute;
     right: 9%;
+    z-index: 1;
   
   }
   li{
    list-style: none;
-    
+   z-index:1;
+   
   }
   nav{
 
