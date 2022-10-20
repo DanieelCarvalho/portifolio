@@ -27,7 +27,7 @@ export const Section =styled.section`
     height: 120vh;
     }
     @media screen and (max-height: 500px){
-    height: 170vh;
+    height: 165vh;
     }
    
    
