@@ -8,7 +8,7 @@ font-size:clamp(1rem, 1rem, 3rem) ;
 color: #999b9f ;
 color:${({ theme }) => theme.projeto  };
 transition: 0.6s;
-width: 4vw;
+width: 50px;
 :hover{
     color: #FEE251;
     transform: rotate(360deg);
