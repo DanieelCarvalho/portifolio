@@ -17,4 +17,3 @@ export const lightTheme = {
     toggleBorder: '#fff',
     gradient: 'black',
   }
- 

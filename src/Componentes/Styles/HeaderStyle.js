@@ -90,7 +90,7 @@ display: none;
     display:flex;
     flex-direction:column;
     position: absolute;
-    left: 82%;
+    left: 79%;
     margin-top: 10px;
     z-index: 2;
     justify-content: center;

@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from "styled-components";
 
 
 export const SobreProjeto = styled.div`
-     color:#fff ${({ theme }) => theme.projeto  };
+     color:#fff;
     font-family: CalibreRegular;
     max-width: 375px;
     height: 100%;
@@ -27,6 +27,7 @@ export const Div= styled.div`
     display: flex;
     justify-content: space-between;
     width: 30vw;
+
     @media screen and (max-width: 500px){
         width: 100%;
        
@@ -52,7 +53,8 @@ export const Div= styled.div`
         }
     li{
         list-style: none;
-        color: #999b9f;   
+        color: ; 
+        
         font-size: 0.8rem;
     }
 `

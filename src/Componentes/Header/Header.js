@@ -18,19 +18,13 @@ export default function Header({ link1, link2, link3, theme, toggleTheme   }) {
         
         <S.Ul>
           <S.Li>
-            <S.LinkS to="/" onClick={() =>{
-                open()
-            }}>{link1}</S.LinkS>
+            <S.LinkS to="/" >{link1}</S.LinkS>
           </S.Li>
           <S.Li>
-            <S.LinkS to="/about" onClick={() =>{
-                open()
-            }}>{link2}</S.LinkS>
+            <S.LinkS to="/about" >{link2}</S.LinkS>
           </S.Li>
           <S.Li>
-            <S.LinkS to="/works" onClick={() =>{
-                open()
-            }}>{link3}</S.LinkS>
+            <S.LinkS to="/works" >{link3}</S.LinkS>
           </S.Li>
         </S.Ul>
       </nav>
