@@ -53,8 +53,7 @@ export const Div= styled.div`
         }
     li{
         list-style: none;
-        color: ; 
-        
+   
         font-size: 0.8rem;
     }
 `

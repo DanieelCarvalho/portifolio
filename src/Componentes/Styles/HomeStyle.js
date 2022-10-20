@@ -5,7 +5,7 @@ import { FiLinkedin, FiGithub } from 'react-icons/fi';
 
 export const Section = styled.section`
     width: 100%;
-    height: 500px;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -36,7 +36,9 @@ export const H2 = styled.h2`
 `
 export const SectionTwo = styled.section`
     width: 40%;
+    height:15vh;
     display: flex;
+    align-items:center;
     justify-content: space-evenly;
     @media screen and (max-width: 500px){
       

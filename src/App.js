@@ -1,6 +1,7 @@
 import React from "react";
 import {lightTheme, darkTheme} from "./Theme";
 import Header from "./Componentes/Header/Header";
+import Footer from "./Componentes/Footer/Footer"
 import {ThemeProvider } from "styled-components";
 import{useState} from "react"
 import * as S from "./Componentes/Styles/AppStyle";
@@ -22,6 +23,7 @@ export default function App() {
     <S.Container>
       <S.GlobalStyle />
       <Header link1="Inicio" link2="Sobre" link3="Projetos" theme={theme} toggleTheme={toggleTheme} />
+      <Footer/>
      </S.Container>
     </ThemeProvider>
   );

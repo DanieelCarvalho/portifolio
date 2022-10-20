@@ -17,14 +17,14 @@ export const H1 = styled.h1`
 
 export const Section =styled.section`
   width: 100%;
-  color: #FEE251  ;
+  height: 85vh;
+  color: #FEE251;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color:  ;
   @media screen and (max-width: 548px){
-      height: vh;
+    height: 120vh;
     }
  
 
