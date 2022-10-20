@@ -207,5 +207,9 @@ export const LinkLogo =styled(Link)`
   @media (max-width:500px){
     height: 5vh;
   }
+  @media screen and (max-height: 500px){
+    height: 7vh;
+    }
+   
 
 `
