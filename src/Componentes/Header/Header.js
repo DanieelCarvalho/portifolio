@@ -11,20 +11,27 @@ import Light from "../LightTheme/LightTheme"
 export default function Header({ link1, link2, link3, theme, toggleTheme   }) {
 
   const [open, setOpen] = useState(false)
+  const [fecha, setFecha] = useState(false)
   const Modal = () =>{
     return(
       
-      <nav>
+      <nav >
         
-        <S.Ul>
-          <S.Li>
-            <S.LinkS to="/" >{link1}</S.LinkS>
+        <S.Ul >
+          <S.Li >
+            <S.LinkS to="/"  onClick={() =>{
+                 setOpen(!open) 
+            }}  >{link1}</S.LinkS>
           </S.Li>
           <S.Li>
-            <S.LinkS to="/about" >{link2}</S.LinkS>
+            <S.LinkS to="/about" onClick={() =>{
+                 setOpen(!open) 
+            }}  >{link2}</S.LinkS>
           </S.Li>
           <S.Li>
-            <S.LinkS to="/works" >{link3}</S.LinkS>
+            <S.LinkS to="/works" onClick={() =>{
+                 setOpen(!open) 
+            }}>{link3}</S.LinkS>
           </S.Li>
         </S.Ul>
       </nav>
@@ -47,7 +54,7 @@ export default function Header({ link1, link2, link3, theme, toggleTheme   }) {
       <S.Header>
       <S.CaixaLogo>
         
-      <S.Logo >
+      <S.Logo > 
         
       <S.LinkLogo to="/" >D</S.LinkLogo>
       </S.Logo>
@@ -71,6 +78,7 @@ export default function Header({ link1, link2, link3, theme, toggleTheme   }) {
         </S.Nav>
       </S.Header>
       <Routes>
+      
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />

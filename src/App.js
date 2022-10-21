@@ -10,7 +10,7 @@ import * as S from "./Componentes/Styles/AppStyle";
 
 
 export default function App() {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState("dark");
   const toggleTheme = () => {
     if (theme === 'light') {
       setTheme('dark');
