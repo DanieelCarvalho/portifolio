@@ -1,20 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import * as S from "../../Styles/ProjetosStyle";
-import Sobre from "../Projetos/SobreProjeto"
+import * as S from "../../style";
+import Sobre from ".."
 import Carousel from 'nuka-carousel';
-import CarouselResponsivo from "./Carousel";
+import CarouselResponsivo from "../../CarouselResponsivo";
 import { easeCircleOut, easeElasticOut } from 'd3-ease';
-import Beat from "../../Assets/Beat.jpg";
-import Calc from "../../Assets/calc.jpg";
-import Harry from "../../Assets/harry.jpg";
-import Lista from "../../Assets/Listadecomprar.jpg";
-import Movie from "../../Assets/Movietop+.jpg";
-import Pokedex from "../../Assets/pokedex.jpg";
-import Star from "../../Assets/Projetostarwars.jpg";
-import Witcher from "../../Assets/thewitcher.jpg";
-import Rc from "../../Assets/Rc.jpg"
-import Ods from "../../Assets/Ods.jpg"
+import Beat from "../../../../Assets/Beat.jpg";
+import Calc from "../../../../Assets/calc.jpg";
+import Harry from "../../../../Assets/harry.jpg";
+import Lista from "../../../../Assets/Listadecomprar.jpg";
+import Movie from "../../../../Assets/Movietop+.jpg";
+import Pokedex from "../../../../Assets/pokedex.jpg";
+import Star from "../../../../Assets/Projetostarwars.jpg";
+import Witcher from "../../../../Assets/thewitcher.jpg";
+import Rc from "../../../../Assets/Rc.jpg"
+import Ods from "../../../../Assets/Ods.jpg"
 import { display, height } from "@mui/system";
 
 const Parousel = styled(Carousel)`

@@ -1,18 +1,18 @@
 import React from "react";
 import Carousel from 'nuka-carousel';
 import styled from "styled-components";
-import Sobre from "../Projetos/SobreProjeto"
-import * as S from "../../Styles/ProjetosStyle";
-import Beat from "../../Assets/Beat.jpg";
-import Calc from "../../Assets/calc.jpg";
-import Harry from "../../Assets/harry.jpg";
-import Lista from "../../Assets/Listadecomprar.jpg";
-import Movie from "../../Assets/Movietop+.jpg";
-import Pokedex from "../../Assets/pokedex.jpg";
-import Star from "../../Assets/Projetostarwars.jpg";
-import Witcher from "../../Assets/thewitcher.jpg";
-import Ods from "../../Assets/Ods.jpg"
-import Rc from "../../Assets/Rc.jpg"
+import Sobre from "../sobreProjeto"
+import * as S from "../style";
+import Beat from "../../../Assets/Beat.jpg";
+import Calc from "../../../Assets/calc.jpg";
+import Harry from "../../../Assets/harry.jpg";
+import Lista from "../../../Assets/Listadecomprar.jpg";
+import Movie from "../../../Assets/Movietop+.jpg";
+import Pokedex from "../../../Assets/pokedex.jpg";
+import Star from "../../../Assets/Projetostarwars.jpg";
+import Witcher from "../../../Assets/thewitcher.jpg";
+import Ods from "../../../Assets/Ods.jpg"
+import Rc from "../../../Assets/Rc.jpg"
 
 const Responsivo = styled(Carousel)`
 

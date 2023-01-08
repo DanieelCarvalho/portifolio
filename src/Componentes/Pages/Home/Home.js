@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "../../Styles/HomeStyle"
+import * as S from "./style"
 import { TypeAnimation } from 'react-type-animation';
 import { FiLinkedin, FiGithub } from 'react-icons/fi';
 import Cafe from "../../..//img/cafe.png"

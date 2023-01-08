@@ -1,7 +1,7 @@
 import React from "react";
-import Projetos from "./ProjetosProps"
-import CarouselResponsivo from "./Carousel"
-import * as S from "../../Styles/ProjetosStyle";
+import Projetos from "./sobreProjeto/definição"
+import CarouselResponsivo from "./CarouselResponsivo"
+import * as S from "./style";
 
 
 export default function Works() {

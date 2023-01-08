@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import styled from "styled-components";
-import * as S from "../../Styles/AboutStyle";
+import * as S from "./style";
 import Daniel from "../../../img/Perfil12.jpg"
 import { FiInstagram } from 'react-icons/fi';
 import { HiOutlineMail } from 'react-icons/hi';

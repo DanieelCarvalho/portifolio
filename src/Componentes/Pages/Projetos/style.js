@@ -85,7 +85,7 @@ export const Figure = styled.figure`
   }
 `
 
-
+ 
 export const ProjectCard = styled.div`
   height: 400px;
   width: 30vw;

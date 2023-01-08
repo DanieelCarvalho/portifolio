@@ -1,12 +1,9 @@
-import React from "react";
-import {lightTheme, darkTheme} from "./Theme";
-import Header from "./Componentes/Header/Header";
-import Footer from "./Componentes/Footer/Footer"
+import {lightTheme, darkTheme} from "../Theme";
+import Header from "../Header";
+import Footer from "../Footer"
 import {ThemeProvider } from "styled-components";
 import{useState} from "react"
-import * as S from "./Componentes/Styles/AppStyle";
-
-
+import * as S from "./style";
 
 
 export default function App() {
@@ -28,3 +25,4 @@ export default function App() {
     </ThemeProvider>
   );
 }
+ 

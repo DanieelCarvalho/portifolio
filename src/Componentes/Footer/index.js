@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import * as S from "../Styles/FooterStyle";
+import * as S from "./style";
 import { FiGithub } from 'react-icons/fi';
 
 const Figurinha = styled(FiGithub)`

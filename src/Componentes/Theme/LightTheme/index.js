@@ -2,7 +2,7 @@ import React from 'react'
 import { func, string } from 'prop-types';
 import { ReactComponent as MoonIcon } from '../../img/moon.svg';
 import { ReactComponent as SunIcon } from '../../img/sun.svg';
-import * as S from "../Styles/LightThemeStyle";
+import * as S from "./style";
 
 const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === 'dark';

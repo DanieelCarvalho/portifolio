@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "../../Styles/HomeStyle";
+import * as S from "./style";
 import Smoke from "../../../img/smoke.png"
 import Cafe from "../../..//img/cafe3.png"
 
