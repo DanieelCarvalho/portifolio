@@ -6,7 +6,7 @@ import Home from "../Pages/Home/Home"
 import Foto1 from "../../img/xbranco.png"
 import Foto2 from "../../img/menubranco.png"
 import * as S from "./style";
-import Light from "../LightTheme"
+import Light from "../Theme/LightTheme"
 
 export default function Header({ link1, link2, link3, theme, toggleTheme   }) {
 
