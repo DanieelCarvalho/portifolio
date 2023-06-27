@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "../Pages/About/index.js";
 import Works from "../Pages/Projetos";
@@ -7,43 +7,24 @@ import Foto1 from "../../img/xbranco.png";
 import Foto2 from "../../img/menubranco.png";
 import * as S from "./style";
 import Light from "../Theme/LightTheme";
+import DadosModalContext from "../../context/DadosModalContext/";
 
 export default function Header({ link1, link2, link3, theme, toggleTheme }) {
-  const [open, setOpen] = useState(false);
-  const [fecha, setFecha] = useState(false);
+  //const [fecha, setFecha] = useState(false);
+  const { open, setOpen } = useContext(DadosModalContext);
+
   const Modal = () => {
     return (
       <nav>
         <S.Ul>
           <S.Li>
-            <S.LinkS
-              to="/"
-              onClick={() => {
-                setOpen(!open);
-              }}
-            >
-              {link1}
-            </S.LinkS>
+            <S.LinkS to="/">{link1}</S.LinkS>
           </S.Li>
           <S.Li>
-            <S.LinkS
-              to="/about"
-              onClick={() => {
-                setOpen(!open);
-              }}
-            >
-              {link2}
-            </S.LinkS>
+            <S.LinkS to="/about">{link2}</S.LinkS>
           </S.Li>
           <S.Li>
-            <S.LinkS
-              to="/works"
-              onClick={() => {
-                setOpen(!open);
-              }}
-            >
-              {link3}
-            </S.LinkS>
+            <S.LinkS to="/works">{link3}</S.LinkS>
           </S.Li>
         </S.Ul>
       </nav>
@@ -52,11 +33,7 @@ export default function Header({ link1, link2, link3, theme, toggleTheme }) {
   return (
     <BrowserRouter>
       <S.Modal>
-        <S.Botao
-          onClick={() => {
-            setOpen(!open);
-          }}
-        >
+        <S.Botao onClick={() => setOpen(!open)}>
           {open === true ? (
             <S.Foto1 src={Foto1} alt="oi" />
           ) : (
