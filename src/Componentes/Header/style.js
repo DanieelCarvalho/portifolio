@@ -13,15 +13,17 @@ export const Header = styled.header`
     display: none;
   }
   @media (max-width: 500px) {
+    justify-content: space-around;
+    align-items: center;
     button {
       display: initial;
       position: absolute;
       left: 37%;
     }
-    height: 12vh;
-    align-items: center;
+    height: 10vh;
     margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 `;
@@ -85,7 +87,7 @@ export const Modal = styled.div`
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 86%;
+    left: 88%;
     margin-top: 10px;
     z-index: 1;
     justify-content: center;
@@ -118,12 +120,10 @@ export const Modal = styled.div`
 `;
 
 export const Foto = styled.img`
-  width: 7vh;
   background-color: #121212;
   background-color: ${({ theme }) => theme.teste};
 `;
 export const Foto1 = styled.img`
-  width: 7vh;
   background-color: #121212;
   background-color: ${({ theme }) => theme.teste};
 `;
