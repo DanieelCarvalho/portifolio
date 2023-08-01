@@ -1,10 +1,10 @@
-import { lightTheme, darkTheme } from "../Theme";
-import Header from "../Header";
-import Footer from "../Footer";
+import { lightTheme, darkTheme } from "../components/Theme";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { ThemeProvider } from "styled-components";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import * as S from "./style";
-import DadosModalContext from "../../context/DadosModalContext";
+import DadosModalContext from "../context/DadosModalContext";
 
 export default function App() {
   const [theme, setTheme] = useState("dark");
@@ -17,10 +17,6 @@ export default function App() {
   };
   const [open, setOpen] = useState(false);
 
-  const [isModalVisible, setModalVisible] = useState(false);
-  // handleOpen = () => {
-  //   return setModalVisible(!isModalVisible);
-  // };
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <DadosModalContext.Provider value={{ open, setOpen }}>

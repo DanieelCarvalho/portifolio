@@ -39,7 +39,7 @@ export default function SobreProjeto({
           <li>{linguagem5}</li>
           <li>{linguagem6}</li>
         </ul>
-        <a target="_blank" href={link}>
+        <a target="_blank" rel="noreferrer" href={link}>
           <Figurinha />
         </a>
       </S.Div>

@@ -1,5 +1,5 @@
-import React, { useState, useContext } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import React, { useContext } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "../Pages/About/index.js";
 import Works from "../Pages/Projetos";
 import Home from "../Pages/Home/Home";

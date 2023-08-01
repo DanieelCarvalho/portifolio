@@ -3,22 +3,20 @@ import styled from "styled-components";
 import * as S from "../../style";
 import Sobre from "..";
 import Carousel from "nuka-carousel";
-import CarouselResponsivo from "../../CarouselResponsivo";
-import { easeCircleOut, easeElasticOut } from "d3-ease";
-import Beat from "../../../../Assets/Beat.jpg";
-import Calc from "../../../../Assets/calc.jpg";
-import Harry from "../../../../Assets/harry.jpg";
-import Lista from "../../../../Assets/Listadecomprar.jpg";
-import Movie from "../../../../Assets/Movietop+.jpg";
-import Pokedex from "../../../../Assets/pokedex.jpg";
-import Star from "../../../../Assets/Projetostarwars.jpg";
-import Witcher from "../../../../Assets/thewitcher.jpg";
-import Rc from "../../../../Assets/Rc.jpg";
-import Ods from "../../../../Assets/Ods.jpg";
-import ImaPay from "../../../../Assets/payjpg.jpg";
-import ByteBank from "../../../../Assets/ByteBank.jpg";
-import PetShop from "../../../../Assets/PetShop.jpg";
-import { display, height } from "@mui/system";
+import Beat from "../../../../../Assets/Beat.jpg";
+
+import Calc from "../../../../../Assets/calc.jpg";
+import Harry from "../../../../../Assets/harry.jpg";
+import Lista from "../../../../../Assets/Listadecomprar.jpg";
+import Movie from "../../../../../Assets/Movietop+.jpg";
+import Pokedex from "../../../../../Assets/pokedex.jpg";
+import Star from "../../../../../Assets/Projetostarwars.jpg";
+import Witcher from "../../../../../Assets/thewitcher.jpg";
+import Rc from "../../../../../Assets/Rc.jpg";
+import Ods from "../../../../../Assets/Ods.jpg";
+import ImaPay from "../../../../../Assets/payjpg.jpg";
+import ByteBank from "../../../../../Assets/ByteBank.jpg";
+import PetShop from "../../../../../Assets/PetShop.jpg";
 
 const Parousel = styled(Carousel)``;
 
@@ -74,6 +72,58 @@ export default function Projetos({
       <S.Caixa>
         <S.Title>{title}</S.Title>
         <Parousel {...settings}>
+          <S.ProjectCard>
+            <S.Link href={imapay} target="_blanck" title="ImaPay">
+              <S.Figure>
+                <S.Img src={ImaPay} alt="imagem da página" />
+              </S.Figure>
+            </S.Link>
+            <Sobre
+              titulo={"ImaPay"}
+              paragrafo={
+                "O projeto Ima-Pay é um projeto feito durante o bootcamp da Ima Tech no programa SharpCoders. Neste projeto em grupo fora desenvolvido uma aplicação de um banco, utilizando uma tematica de Star Wars."
+              }
+              link={"https://github.com/SharpTroppers/ImaPay"}
+              linguagem1={"React"}
+              linguagem2={"C#"}
+              linguagem3={"TypeScript"}
+              linguagem4={"MySql"}
+              linguagem5={"Postman"}
+              linguagem6={"Javascript"}
+            />
+          </S.ProjectCard>
+          <S.ProjectCard>
+            <S.Link target="_blanck" title="ByteBank">
+              <S.Figure>
+                <S.Img src={ByteBank} alt="imagem da página" />
+              </S.Figure>
+            </S.Link>
+            <Sobre
+              titulo={"ByteBank"}
+              paragrafo={
+                "Projeto proposto durante a realização do Programa Sharp Coders da Imã Learning Place: desenvolver um banco digital com operações básicas."
+              }
+              link={"https://github.com/DanieelCarvalho/bytebank"}
+              linguagem2={"C#"}
+            />
+          </S.ProjectCard>
+          <S.ProjectCard>
+            <S.Link target="_blanck" title="PetShop">
+              <S.Figure>
+                <S.Img src={PetShop} alt="imagem da página" />
+              </S.Figure>
+            </S.Link>
+            <Sobre
+              titulo={"PetShop"}
+              paragrafo={
+                "Desafio Final da formação: React (Celcoin), onde foi pedido para desenvolver um e-commerce."
+              }
+              link={"https://github.com/DanieelCarvalho/pet-shop"}
+              linguagem1={"Html"}
+              linguagem2={"CSS"}
+              linguagem3={"React"}
+            />
+          </S.ProjectCard>
           <S.ProjectCard>
             <S.Link href={beat} target="_blanck" title="Beat">
               <S.Figure>
@@ -247,58 +297,6 @@ export default function Projetos({
                 "O objetivo desse projeto é mostrar os Objetivos de Desenvolvimento Sustentável, proposto pela Onu, na minha cidade "
               }
               link={"https://github.com/KermitTheSapo/Recipes-vnw"}
-              linguagem1={"Html"}
-              linguagem2={"CSS"}
-              linguagem3={"React"}
-            />
-          </S.ProjectCard>
-          <S.ProjectCard>
-            <S.Link href={imapay} target="_blanck" title="ImaPay">
-              <S.Figure>
-                <S.Img src={ImaPay} alt="imagem da página" />
-              </S.Figure>
-            </S.Link>
-            <Sobre
-              titulo={"ImaPay"}
-              paragrafo={
-                "O projeto Ima-Pay é um projeto feito durante o bootcamp da Ima Tech no programa SharpCoders. Neste projeto em grupo fora desenvolvido uma aplicação de um banco, utilizando uma tematica de Star Wars."
-              }
-              link={"https://github.com/SharpTroppers/ImaPay"}
-              linguagem1={"React"}
-              linguagem2={"C#"}
-              linguagem3={"TypeScript"}
-              linguagem4={"MySql"}
-              linguagem5={"Postman"}
-              linguagem6={"Javascript"}
-            />
-          </S.ProjectCard>
-          <S.ProjectCard>
-            <S.Link target="_blanck" title="ByteBank">
-              <S.Figure>
-                <S.Img src={ByteBank} alt="imagem da página" />
-              </S.Figure>
-            </S.Link>
-            <Sobre
-              titulo={"ByteBank"}
-              paragrafo={
-                "Projeto proposto durante a realização do Programa Sharp Coders da Imã Learning Place: desenvolver um banco digital com operações básicas."
-              }
-              link={"https://github.com/DanieelCarvalho/bytebank"}
-              linguagem2={"C#"}
-            />
-          </S.ProjectCard>
-          <S.ProjectCard>
-            <S.Link target="_blanck" title="PetShop">
-              <S.Figure>
-                <S.Img src={PetShop} alt="imagem da página" />
-              </S.Figure>
-            </S.Link>
-            <Sobre
-              titulo={"PetShop"}
-              paragrafo={
-                "Desafio Final da formação: React (Celcoin), onde foi pedido para desenvolver um e-commerce."
-              }
-              link={"https://github.com/DanieelCarvalho/pet-shop"}
               linguagem1={"Html"}
               linguagem2={"CSS"}
               linguagem3={"React"}

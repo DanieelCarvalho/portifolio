@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
 export const AboutSection = styled.section`
   min-height: calc(100vh - 45px);

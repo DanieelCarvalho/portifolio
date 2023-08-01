@@ -1,8 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
-import SFMono from '../../Fonte/sf-mono-font/SF-Mono-Bold.ttf'
-import Calibre from '../../Fonte/calibre/CalibreRegular.otf'
-
-
+import SFMono from "../Fonte/sf-mono-font/SF-Mono-Bold.ttf";
+import Calibre from "../Fonte/calibre/CalibreRegular.otf";
 
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
@@ -32,13 +30,8 @@ p{
 }
 
 
-`
+`;
 export const Button = styled.button`
-border:solid red
-` 
-export const Container = styled.section`
-  
-`
-
-
- 
+  border: solid red;
+`;
+export const Container = styled.section``;

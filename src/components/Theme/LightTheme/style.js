@@ -1,5 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
-
+import styled from "styled-components";
 
 export const Botao = styled.button`
   background: ${({ theme }) => theme.gradient};
@@ -11,7 +10,7 @@ export const Botao = styled.button`
   justify-content: space-between;
   margin: 0 auto;
   overflow: hidden;
-  
+
   position: relative;
   width: 6rem;
   height: 3rem;
@@ -20,16 +19,17 @@ export const Botao = styled.button`
     height: auto;
     width: 2.5rem;
     transition: all 0.3s linear;
-  
-    
+
     // sun icon
     &:first-child {
-      transform: ${({ lightTheme }) => lightTheme ? 'translateY(0)' : 'translateY(100px)'};
+      transform: ${({ lightTheme }) =>
+        lightTheme ? "translateY(0)" : "translateY(100px)"};
     }
-    
+
     // moon icon
     &:nth-child(2) {
-      transform: ${({ lightTheme }) => lightTheme ? 'translateY(-100px)' : 'translateY(0)'};
+      transform: ${({ lightTheme }) =>
+        lightTheme ? "translateY(-100px)" : "translateY(0)"};
     }
   }
 `;
