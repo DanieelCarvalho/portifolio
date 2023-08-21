@@ -4,7 +4,6 @@ import * as S from "../../style";
 import Sobre from "..";
 import Carousel from "nuka-carousel";
 import Beat from "../../../../../Assets/Beat.jpg";
-
 import Calc from "../../../../../Assets/calc.jpg";
 import Harry from "../../../../../Assets/harry.jpg";
 import Lista from "../../../../../Assets/Listadecomprar.jpg";
@@ -17,6 +16,7 @@ import Ods from "../../../../../Assets/Ods.jpg";
 import ImaPay from "../../../../../Assets/payjpg.jpg";
 import ByteBank from "../../../../../Assets/ByteBank.jpg";
 import PetShop from "../../../../../Assets/PetShop.jpg";
+import TP from "../../../../../Assets/TP.jpg";
 
 const Parousel = styled(Carousel)``;
 
@@ -33,6 +33,7 @@ export default function Projetos({
   witcher,
   ods,
   imapay,
+  TenisExpress,
 }) {
   const settings = {
     dots: true,
@@ -92,6 +93,24 @@ export default function Projetos({
               linguagem6={"Javascript"}
             />
           </S.ProjectCard>
+          <S.ProjectCard>
+            <S.Link href={TenisExpress} target="_blanck" title="TenisExpress">
+              <S.Figure>
+                <S.Img src={TP} alt="imagem da página" />
+              </S.Figure>
+            </S.Link>
+            <Sobre
+              titulo={"TenisExpress"}
+              paragrafo={
+                "Projeto final do bootcamp do Instituto NuBank em parceria com Descomplica."
+              }
+              link={"https://github.com/DanieelCarvalho/TenisExpress"}
+              linguagem1={"Html"}
+              linguagem2={"CSS"}
+              linguagem3={"React"}
+            />
+          </S.ProjectCard>
+
           <S.ProjectCard>
             <S.Link target="_blanck" title="ByteBank">
               <S.Figure>

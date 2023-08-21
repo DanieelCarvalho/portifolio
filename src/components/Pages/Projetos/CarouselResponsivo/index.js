@@ -17,6 +17,7 @@ import Rc from "../../../../Assets/Rc.jpg";
 import ImaPay from "../../../../Assets/payjpg.jpg";
 import ByteBank from "../../../../Assets/ByteBank.jpg";
 import PetShop from "../../../../Assets/PetShop.jpg";
+import TP from "../../../../Assets/TP.jpg";
 
 const Responsivo = styled(Carousel)``;
 
@@ -33,6 +34,7 @@ export default function CarouselResponsivo({
   witcher,
   ods,
   imapay,
+  TenisExpress,
 }) {
   const settings = {
     dots: true,
@@ -91,6 +93,23 @@ export default function CarouselResponsivo({
             linguagem4={"MySql"}
             linguagem5={"Postman"}
             linguagem6={"Javascript"}
+          />
+        </S.ProjectCard>
+        <S.ProjectCard>
+          <S.Link href={TenisExpress} target="_blanck" title="TenisExpress">
+            <S.Figure>
+              <S.Img src={TP} alt="imagem da página" />
+            </S.Figure>
+          </S.Link>
+          <Sobre
+            titulo={"TenisExpress"}
+            paragrafo={
+              "Projeto final do bootcamp do Instituto NuBank em parceria com Descomplica."
+            }
+            link={"https://github.com/DanieelCarvalho/TenisExpress"}
+            linguagem1={"Html"}
+            linguagem2={"CSS"}
+            linguagem3={"React"}
           />
         </S.ProjectCard>
         <S.ProjectCard>

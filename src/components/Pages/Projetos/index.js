@@ -19,6 +19,7 @@ export default function Works() {
         witcher="https://witcher-nine.vercel.app/"
         ods="https://onu-ods.vercel.app/"
         imapay="https://imapay-troopers.netlify.app/"
+        TenisExpress="https://tenis-express.vercel.app/"
       />
 
       <CarouselResponsivo
@@ -34,6 +35,7 @@ export default function Works() {
         witcher="https://witcher-nine.vercel.app/"
         ods="https://onu-ods.vercel.app/"
         imapay="https://imapay-troopers.netlify.app/"
+        TenisExpress="https://tenis-express.vercel.app/"
       />
     </S.AboutSection>
   );
