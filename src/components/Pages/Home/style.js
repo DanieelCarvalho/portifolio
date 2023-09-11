@@ -17,7 +17,7 @@ export const H4 = styled.h4`
   color: #fff ${({ theme }) => theme.LinkHeader};
   font-family: CalibreRegular;
   text-transform: uppercase;
-  font-size: clamp(1rem, 2rem, 5rem);
+  font-size: clamp(1rem, 2.2rem, 5rem);
 `;
 
 export const H1 = styled.h1`
@@ -31,7 +31,7 @@ export const H2 = styled.h2`
   color: #fff ${({ theme }) => theme.LinkHeader};
   font-family: CalibreRegular;
   text-transform: uppercase;
-  font-size: clamp(1rem, 2rem, 5rem);
+  font-size: clamp(1rem, 2.2rem, 5rem);
 `;
 export const SectionTwo = styled.section`
   width: 40%;
@@ -47,14 +47,14 @@ export const SectionTwo = styled.section`
   }
 `;
 export const Linkedin = styled(FiLinkedin)`
-  font-size: clamp(1rem, 1.5rem, 2rem);
+  font-size: clamp(1rem, 1.6rem, 2rem);
   color: #999b9f ${({ theme }) => theme.text};
   text-transform: uppercase;
   font-family: CalibreRegular;
   transition: 0.1s;
 `;
 export const Github = styled(FiGithub)`
-  font-size: clamp(1rem, 1.5rem, 2rem);
+  font-size: clamp(1rem, 1.6rem, 2rem);
   color: #999b9f ${({ theme }) => theme.text};
   text-transform: uppercase;
   font-family: CalibreRegular;
@@ -65,7 +65,7 @@ export const Link = styled.a`
   width: 12vw;
   height: 50px;
   display: flex;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-family: "SF-Mono-Bold";
   align-items: center;
   justify-content: space-evenly;

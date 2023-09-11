@@ -7,7 +7,7 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid #272727 1px;
+  border-bottom: solid #272727 0.1rem;
   border-color: ${({ theme }) => theme.text};
   button {
     display: none;
@@ -74,7 +74,8 @@ export const LinkS = styled(Link)`
   color: #fff;
   color: ${({ theme }) => theme.LinkHeader};
   font-weight: 600;
-  font-size: clamp(0.5rem, 1rem, 2rem);
+  font-size: clamp(0.5rem, 1.3rem, 2rem);
+
   transition: 0.2s;
   transition-timing-function: ease-in-out;
   &:hover {
@@ -177,7 +178,7 @@ export const LinkLogo = styled(Link)`
   color: #fee251;
   text-decoration: none;
   text-align: center;
-  font-size: clamp(0.5rem, 1.3rem, 2rem);
+  font-size: clamp(1rem, 1.4rem, 2.5rem);
   text-transform: uppercase;
   display: flex;
   align-items: center;

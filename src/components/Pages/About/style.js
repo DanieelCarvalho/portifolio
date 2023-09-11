@@ -78,7 +78,7 @@ export const DivTwo = styled.div`
 export const P = styled.p`
   color: #fff;
   font-family: "CalibreRegular";
-  font-size: clamp(1px, 15px, 17px);
+  font-size: clamp(0.1rem, 1.5rem, 1.7rem);
   text-align: justify;
   line-height: 26px;
   width: 31vw;
@@ -146,7 +146,7 @@ export const Instagram = styled(FiInstagram)`
   }
 `;
 export const Download = styled(BsDownload)`
-  font-size: clamp(1rem, 1.5rem, 2rem);
+  font-size: clamp(1rem, 1.6rem, 2rem);
   color: #999b9f ${({ theme }) => theme.text};
   text-transform: uppercase;
   font-family: CalibreRegular;
@@ -162,7 +162,7 @@ export const Link = styled.a`
   width: 12vw;
   height: 50px;
   display: flex;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-family: "SF-Mono-Bold";
   align-items: center;
   justify-content: space-evenly;
@@ -173,9 +173,9 @@ export const Link = styled.a`
   color: ${({ theme }) => theme.text};
   cursor: pointer;
   p {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     @media screen and (max-width: 500px) {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
   transition: all 0.5s;

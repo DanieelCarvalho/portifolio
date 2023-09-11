@@ -11,6 +11,7 @@ export const SobreProjeto = styled.div`
   justify-content: space-evenly;
   p {
     text-align: justify;
+    font-size: 1.4rem;
   }
   h3 {
     color: #999b9f ${({ theme }) => theme.projeto};
@@ -47,6 +48,6 @@ export const Div = styled.div`
   li {
     list-style: none;
 
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 `;
