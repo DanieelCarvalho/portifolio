@@ -28,7 +28,7 @@ export default function Home() {
       <S.SectionTwo>
         <S.Link
           target="_blank"
-          href="https://www.linkedin.com/in/daniel-carvalho-desenvolvedor/"
+          href="https://www.linkedin.com/in/daniel-carvalho-dev/"
         >
           <S.Linkedin />
           <p>Linkedin</p>
